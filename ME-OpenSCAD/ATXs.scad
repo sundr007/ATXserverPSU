@@ -7,34 +7,16 @@ $fn=60;
 // ##### RENDERING OPTIONS #####
 
 render_3d   = true;
-//2D
-render_sides       = false;
-render_top         = false;
-render_gasket      = false;
 
+// Part Seperation
 Sep=10-10*$t;
 Sep=1.5;
 
-// ##### Dimensions #####
-x_in= 8;
-y_in= 10;
-z_in= 5;
-// #####  #####
-
 thickness = 3;
-
-// PCB Size
-x_pcb = 100;
-y_pcb = 100;
-
-
-// fingers
-NfSide=1;
-NfTop=4;
 
 // ATX Front Plate
 W = 150;
-H = 86;
+H = 82;
 
 Hpsu=41.5;
 Lpsu=165;
@@ -55,6 +37,118 @@ Ybacksq = L-(L1+yindent)+6;
 Xseperator1 = Xindent+Hpsu;
 Xseperator2 = Xindent+Hpsu*2;
 
+
+// ================================================
+// Define 3D View
+// ================================================
+
+module 3d() {
+    Front3d();
+    Right3d();
+    Sep13d();
+    Sep23d();
+    Top3d();
+    Bottom3d();
+    Back3d();
+    Left3d();
+    //PSU_Floor3d();
+}
+
+// ================================================
+// Define 2D View
+// ================================================
+
+module 2d() {
+    kerf=0.1;
+    projection(){
+
+            side(z,y);
+        translate([z+thickness+.1, 0, 0]) 
+            side(z,x);
+        translate([(z+thickness+.1)*2, 0, 0]) 
+            side(z,x);
+        translate([(z+thickness+.1)*3, 0, 0])  
+            side(z,y);
+    
+}
+}
+
+
+if (render_3d) {
+            3d();
+} 
+else {
+
+}
+
+
+module PSU_Floor()
+{
+    lasercutoutSquare(thickness=thickness, x=Xseperator2, y=Lpsu,
+    bumpy_finger_joints=[
+            [UP, 0, 1],
+            [DOWN, 1, 1],
+            [LEFT, 0, 1],
+            [RIGHT, 0, 1]
+        ]
+    );  
+}
+
+
+// ================================================
+// Part Positioning
+// ================================================
+module PSU_Floor3d(){
+translate([0,0*Sep,0])
+    rotate([0,0,0])
+        PSU_Floor();
+}
+module Front3d(){
+translate([0,-3*Sep,0])
+    rotate([90,0,0])
+        FrontPlateAcrylic();
+}
+module Right3d(){
+translate([Xindent+Wback-thickness+3*Sep,L-Ybacksq,0])
+    rotate([90,0,90])
+        right();
+}
+module Sep13d(){
+translate([Xseperator1,0,0])
+    rotate([90,0,90])
+        Seperator();
+}
+module Sep23d(){
+translate([Xseperator2,0,0])
+    rotate([90,0,90])
+        Seperator();
+}
+module Top3d(){
+translate([0,0,H+Sep*3]){
+    top();
+}
+}
+module Bottom3d(){
+translate([0,0,-thickness-Sep*3]){
+    bottom();
+}
+}
+module Back3d(){
+rotate([90,0,0])
+    translate([Xindent+thickness,0,-L-thickness-Sep*3])
+        back();
+    }
+module Left3d(){
+translate([Xindent-Sep*3,L-Ybacksq,0])
+    rotate([90,0,90])
+    left();
+}
+
+
+// ================================================
+// Part Definitions
+// ================================================
+
 module topPlate()
 {
     Wback = Wback - 2*thickness;
@@ -64,12 +158,12 @@ module topPlate()
     points = [[0,0], [0,L1], [Xindent,L1+yindent], [Xindent,L], [Xindent+Wback,L], [Xindent+Wback,L1+yindent], [2*Xindent+Wback,L1], [2*Xindent+Wback,Yfrontpanelthick+(Wfront-(2*Xindent+Wback))], [Wfront,Yfrontpanelthick], [Wfront,0]];
     lasercutout(thickness=thickness, points = points,
     simple_tab_holes=[
-                [MID,Xseperator1, 0+thickness/2],
+                [MID,Xseperator1, 0+thickness*1.5],
                 [MID,Xseperator1, (Lpsu)*1/3-thickness/2],
                 [MID,Xseperator1, (Lpsu)*2/3-thickness/2],
                 [MID,Xseperator1, Lpsu-thickness*1.5],
     
-                [MID,Xseperator2, 0+thickness/2],
+                [MID,Xseperator2, 0+thickness*1.5],
                 [MID,Xseperator2, (Lpsu)*1/3-thickness/2],
                 [MID,Xseperator2, (Lpsu)*2/3-thickness/2],
                 [MID,Xseperator2, Lpsu-thickness*1.5],
@@ -81,19 +175,28 @@ module topPlate()
                 [UP, 1, 1],
                 [LEFT, 1, 2],
                 [RIGHT, 2, 2]
+            ],
+            cutouts = [
+            [Xindent, 4, 83,120]
+    ]
+    );
+        translate([0,0,0])
+        lasercutoutSquare(thickness=thickness, x=Wfront, y=thickness/2,
+            bumpy_finger_joints=[
+                [DOWN, 1, 3]
             ]
     );
 }
 
 module topTrim()
 {
-    Wgap=60;
+    Wgap=75;
     L=L+thickness;
     Y1 = Yfrontpanelthick+(Wfront-(2*Xindent+Wback));
     Xinner1 = Xindent+(Wback-Wgap)/2;
     Xinner2 = Xinner1+Wgap;
     
-    points = [[0,0], [0,Y1], [Xinner1,Y1+Xinner1], [Xinner1,L-Xinner1-Xindent], [Xindent,L-Yfrontpanelthick], [Xindent,L], [Xindent+Wback,L], [Xindent+Wback,L-Yfrontpanelthick], [Xinner2,L-Xinner1-Xindent], [Xinner2,Y1+Xinner1], [Wfront,Yfrontpanelthick], [Wfront,0]];
+    points = [[0,-thickness], [0,Y1], [Xinner1,Y1+Xinner1], [Xinner1,L-Xinner1-Xindent], [Xindent,L-Yfrontpanelthick], [Xindent,L], [Xindent+Wback,L], [Xindent+Wback,L-Yfrontpanelthick], [Xinner2,L-Xinner1-Xindent], [Xinner2,Y1+Xinner1], [Wfront,Yfrontpanelthick], [Wfront,-thickness]];
     lasercutout(thickness=thickness, points = points);  
 }
 
@@ -125,11 +228,11 @@ module Seperator()
 {
     lasercutoutSquare(thickness=thickness, x=Lpsu, y=H,
     simple_tabs=[
-            [DOWN, thickness, 0],
+            [DOWN, thickness*2, 0],
             [DOWN, Lpsu*1/3, 0],
             [DOWN, Lpsu*2/3, 0],
             [DOWN, Lpsu-thickness, 0],
-            [UP, thickness, H],
+            [UP, thickness*2, H],
             [UP, Lpsu*1/3, H],
             [UP, Lpsu*2/3, H],
             [UP, Lpsu-thickness, H]
@@ -178,10 +281,10 @@ module FrontPlateAcrylic()
     lasercutoutSquare(thickness=thickness, x=Wfront, y=H,
     bumpy_finger_joints=[
             [UP, 1, 3],
-            [DOWN, 1, 3]
+            [DOWN, 0, 3]
         ],
     cutouts = [
-            [Xindent, 4, 83, 74.5],
+            [Xindent+thickness, 4, 80, 74.5],
             [Wfront-50, 60, 30, 10],
             [Wfront-50, 30, 40, 10]
     ],
@@ -193,88 +296,5 @@ module FrontPlateAcrylic()
         ]
     
     );  
-}
-
-module Front3d(){
-translate([0,-3*Sep,0])
-    rotate([90,0,0])
-        FrontPlateAcrylic();
-}
-module Right3d(){
-translate([Xindent+Wback-thickness+3*Sep,L-Ybacksq,0])
-    rotate([90,0,90])
-        right();
-}
-module Sep13d(){
-translate([Xseperator1,0,0])
-    rotate([90,0,90])
-        Seperator();
-}
-module Sep23d(){
-translate([Xseperator2,0,0])
-    rotate([90,0,90])
-        Seperator();
-}
-module Top3d(){
-translate([0,0,H+Sep*3]){
-    top();
-}
-}
-module Bottom3d(){
-translate([0,0,-thickness-Sep*3]){
-    bottom();
-}
-}
-module Back3d(){
-rotate([90,0,0])
-    translate([Xindent+thickness,0,-L-thickness-Sep*3])
-        back();
-    }
-module Left3d(){
-translate([Xindent-Sep*3,L-Ybacksq,0])
-    rotate([90,0,90])
-    left();
-}
-
-
-module 3d() {
-    Front3d();
-    Right3d();
-    Sep13d();
-    Sep23d();
-    Top3d();
-    Bottom3d();
-    Back3d();
-    Left3d();
-}
-
-if (render_3d) {
-            3d();
-} else {
-    kerf=0.1;
-   // projection_renderer(render_index=render_index, kerf_width//=0.1) {  
-  projection(){
-    if(render_sides){  
-            side(z,y);
-        translate([z+thickness+.1, 0, 0]) 
-            side(z,x);
-        translate([(z+thickness+.1)*2, 0, 0]) 
-            side(z,x);
-        translate([(z+thickness+.1)*3, 0, 0])  
-            side(z,y);
-    }
-    if(render_top){
-        //translate([(y+thickness+80)*2, 0, 0]) 
-            top();
-          //  translate([(y+thickness+80)*2, 0, 0]) 
-            //    mirror([0,0,0])
-              //  enclosure_bottom_etch();
-    }
-    if(render_gasket){
-        for(ix=[0:3])
-            translate([ix*((x_pcb-x_c)/2+kerf),0,0])
-                gasket();
-    }
-}
 }
 
