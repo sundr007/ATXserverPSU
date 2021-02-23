@@ -1,0 +1,768 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLedger 17000 11000
+encoding utf-8
+Sheet 1 9
+Title "CRPS to ATX"
+Date "2018-08-03"
+Rev "0000"
+Comp "Artesyn Embedded Technologies"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 5750 8150 2    50   Input ~ 0
+Vmain
+$Sheet
+S 10700 2150 550  300 
+U 5B692762
+F0 "8pinATX" 118
+F1 "8pinATX.sch" 118
+F2 "GND" I L 10700 2350 50 
+F3 "12V" I L 10700 2250 50 
+$EndSheet
+$Comp
+L power:GND #PWR0106
+U 1 1 5B6B09BF
+P 10500 2450
+F 0 "#PWR0106" H 10500 2200 50  0001 C CNN
+F 1 "GND" H 10500 2300 50  0000 C CNN
+F 2 "" H 10500 2450 50  0001 C CNN
+F 3 "" H 10500 2450 50  0001 C CNN
+	1    10500 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 2450 10500 2350
+Wire Wire Line
+	10500 2350 10700 2350
+Text GLabel 10500 2250 0    50   Input ~ 0
+Vmain
+Wire Wire Line
+	10500 2250 10700 2250
+Wire Notes Line
+	10000 1750 12300 1750
+Wire Notes Line
+	12300 1750 12300 2850
+Wire Notes Line
+	12300 2850 10000 2850
+Wire Notes Line
+	10000 2850 10000 1750
+Text Notes 12600 1650 2    157  ~ 0
+8 Pin ATX Connectors
+Text GLabel 10500 3800 0    50   Input ~ 0
+Vmain
+Wire Wire Line
+	10500 3800 10700 3800
+Wire Notes Line
+	10000 3300 12300 3300
+Text Notes 12600 3200 2    157  ~ 0
+6 Pin ATX Connectors
+$Sheet
+S 10700 3700 500  500 
+U 5B6B1865
+F0 "6pinATX" 118
+F1 "6pinATX.sch" 118
+F2 "GND" I L 10700 4100 50 
+F3 "12V" I L 10700 3800 50 
+F4 "3V3" I L 10700 4000 50 
+F5 "5V" I L 10700 3900 50 
+$EndSheet
+$Comp
+L power:GND #PWR0107
+U 1 1 5B6B8444
+P 10600 4150
+F 0 "#PWR0107" H 10600 3900 50  0001 C CNN
+F 1 "GND" H 10600 4000 50  0000 C CNN
+F 2 "" H 10600 4150 50  0001 C CNN
+F 3 "" H 10600 4150 50  0001 C CNN
+	1    10600 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 4150 10600 4100
+Wire Wire Line
+	10600 4100 10700 4100
+Wire Notes Line
+	10000 4500 12300 4500
+Wire Notes Line
+	12300 3300 12300 4500
+Wire Notes Line
+	10000 3300 10000 4500
+Text GLabel 10500 5400 0    50   Input ~ 0
+Vmain
+Wire Notes Line
+	10050 5050 12350 5050
+Text Notes 12650 4950 2    157  ~ 0
+24 Pin ATX Connector
+$Comp
+L power:GND #PWR0108
+U 1 1 5B6B8D43
+P 10600 6550
+F 0 "#PWR0108" H 10600 6300 50  0001 C CNN
+F 1 "GND" H 10600 6400 50  0000 C CNN
+F 2 "" H 10600 6550 50  0001 C CNN
+F 3 "" H 10600 6550 50  0001 C CNN
+	1    10600 6550
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 10700 5350 650  1050
+U 5B6B9243
+F0 "24pinATX" 118
+F1 "24pinATX.sch" 118
+F2 "GND" I L 10700 6300 50 
+F3 "3V3" I L 10700 5700 50 
+F4 "PSON" I L 10700 6050 50 
+F5 "12V" I L 10700 5400 50 
+F6 "-12V" I L 10700 5900 50 
+F7 "5Vsb" I L 10700 5600 50 
+F8 "PWOK" I L 10700 6150 50 
+F9 "5V" I L 10700 5500 50 
+F10 "3V3-RS" I L 10700 5800 50 
+$EndSheet
+Wire Wire Line
+	10500 5400 10700 5400
+Text GLabel 10500 3900 0    50   Input ~ 0
+5V
+Text GLabel 10500 4000 0    50   Input ~ 0
+3V3
+Text GLabel 10500 5500 0    50   Input ~ 0
+5V
+Text GLabel 10500 5700 0    50   Input ~ 0
+3V3
+Text GLabel 10500 5600 0    50   Input ~ 0
+5Vsb
+NoConn ~ 10700 5900
+Wire Wire Line
+	10500 5700 10700 5700
+Wire Wire Line
+	10500 5600 10700 5600
+Wire Wire Line
+	10500 5500 10700 5500
+Wire Wire Line
+	10500 3900 10700 3900
+Wire Wire Line
+	10500 4000 10700 4000
+$Sheet
+S 5150 2000 550  400 
+U 5B6C512B
+F0 "5Vsb" 50
+F1 "5Vsb.sch" 50
+F2 "5Vsb" I R 5700 2200 50 
+F3 "12V" I L 5150 2200 50 
+$EndSheet
+Wire Notes Line
+	6200 1850 6200 2700
+Wire Notes Line
+	6200 2700 4700 2700
+Wire Notes Line
+	4700 2700 4700 1850
+Wire Notes Line
+	4700 1850 6200 1850
+Text Notes 7150 1800 2    157  ~ 0
+5Vsb Buck Converter
+Text GLabel 5800 2200 2    50   Input ~ 0
+5Vsb
+Wire Wire Line
+	5050 2200 5150 2200
+Wire Wire Line
+	5700 2200 5800 2200
+$Sheet
+S 5100 3750 550  450 
+U 5B7EFFE7
+F0 "5V" 50
+F1 "5V.sch" 50
+F2 "12V" I L 5100 3900 50 
+F3 "5V" I R 5650 3900 50 
+F4 "EN" I L 5100 4050 50 
+F5 "Pgood" I R 5650 4050 50 
+F6 "FB" I R 5650 3800 50 
+$EndSheet
+Text Notes 6900 3500 2    157  ~ 0
+5V Buck Converter
+Wire Notes Line
+	6200 3550 6200 4550
+Wire Notes Line
+	6200 4550 4700 4550
+Wire Notes Line
+	4700 4550 4700 3550
+Wire Notes Line
+	4700 3550 6200 3550
+Text GLabel 5050 3900 0    50   Input ~ 0
+Vmain
+Text GLabel 6400 3900 2    50   Input ~ 0
+5V
+Wire Wire Line
+	5650 3900 6150 3900
+Text GLabel 4150 4050 0    50   Input ~ 0
+PWOK
+$Comp
+L Device:R R101
+U 1 1 5B8506F3
+P 4300 3750
+F 0 "R101" H 4370 3796 50  0000 L CNN
+F 1 "10K" H 4370 3705 50  0000 L CNN
+F 2 "AEvan:0805_R" V 4230 3750 50  0001 C CNN
+F 3 "~" H 4300 3750 50  0001 C CNN
+	1    4300 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3900 4300 4050
+Connection ~ 4300 4050
+Wire Wire Line
+	4300 4050 5100 4050
+Wire Notes Line
+	4700 4950 6200 4950
+Wire Notes Line
+	6200 4950 6200 5950
+Wire Notes Line
+	6200 5950 4700 5950
+Wire Notes Line
+	4700 5950 4700 4950
+Text Notes 7050 4900 2    157  ~ 0
+3V3 Buck Converter
+Wire Wire Line
+	5100 5400 4350 5400
+Wire Wire Line
+	4350 4650 6300 4650
+Wire Wire Line
+	6300 4650 6300 4050
+Wire Wire Line
+	6300 4050 5650 4050
+Text GLabel 5000 5250 0    50   Input ~ 0
+Vmain
+Wire Wire Line
+	5000 5250 5100 5250
+Wire Wire Line
+	10700 6300 10600 6300
+Wire Wire Line
+	10600 6300 10600 6550
+Wire Notes Line
+	10050 6800 12350 6800
+Wire Notes Line
+	12350 5050 12350 6800
+Wire Notes Line
+	10050 5050 10050 6800
+Wire Wire Line
+	10700 6150 6900 6150
+Wire Wire Line
+	6900 5400 6900 6150
+Text GLabel 8700 5150 2    50   Input ~ 0
+3V3-RS
+Text GLabel 10500 5800 0    50   Input ~ 0
+3V3-RS
+Wire Wire Line
+	10500 5800 10700 5800
+$Sheet
+S 5100 6500 750  500 
+U 5B867F26
+F0 "LogicControl" 50
+F1 "LogicControl.sch" 50
+F2 "PSU-ENABLE" I L 5100 6600 50 
+F3 "PWOK" I R 5850 6900 50 
+F4 "PSON" I R 5850 6800 50 
+F5 "5Vsb" I R 5850 6700 50 
+$EndSheet
+Wire Wire Line
+	5850 6900 6900 6900
+Connection ~ 6900 6150
+Wire Wire Line
+	10700 6050 7900 6050
+Wire Wire Line
+	6750 6800 5850 6800
+Text GLabel 6250 6700 2    50   Input ~ 0
+5Vsb
+Wire Wire Line
+	6250 6700 5850 6700
+Text GLabel 4250 6600 0    50   Input ~ 0
+PSON
+Wire Notes Line
+	4700 6400 6200 6400
+Wire Notes Line
+	6200 6400 6200 7150
+Wire Notes Line
+	6200 7150 4700 7150
+Wire Notes Line
+	4700 7150 4700 6400
+Text Notes 6250 6350 2    157  ~ 0
+Control Logic
+Wire Wire Line
+	6750 6050 6750 6800
+Wire Wire Line
+	6900 6150 6900 6900
+Text GLabel 5050 2200 0    50   Input ~ 0
+Vstby
+$Comp
+L Device:C C102
+U 1 1 5BA6266D
+P 4850 8450
+F 0 "C102" H 4965 8496 50  0000 L CNN
+F 1 "C" H 4965 8405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_6.3x5.4" H 4888 8300 50  0001 C CNN
+F 3 "~" H 4850 8450 50  0001 C CNN
+	1    4850 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C103
+U 1 1 5BA626E5
+P 5400 8450
+F 0 "C103" H 5515 8496 50  0000 L CNN
+F 1 "C" H 5515 8405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_6.3x5.4" H 5438 8300 50  0001 C CNN
+F 3 "~" H 5400 8450 50  0001 C CNN
+	1    5400 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5BA62715
+P 4850 8700
+F 0 "#PWR0102" H 4850 8450 50  0001 C CNN
+F 1 "GND" H 4850 8550 50  0000 C CNN
+F 2 "" H 4850 8700 50  0001 C CNN
+F 3 "" H 4850 8700 50  0001 C CNN
+	1    4850 8700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5BA62732
+P 5400 8700
+F 0 "#PWR0103" H 5400 8450 50  0001 C CNN
+F 1 "GND" H 5400 8550 50  0000 C CNN
+F 2 "" H 5400 8700 50  0001 C CNN
+F 3 "" H 5400 8700 50  0001 C CNN
+	1    5400 8700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 8700 5400 8600
+Wire Wire Line
+	5400 8300 5400 8150
+Wire Wire Line
+	4850 8300 4850 8150
+Wire Wire Line
+	4850 8700 4850 8600
+Text Notes 12600 7200 2    157  ~ 0
+I2C to USB Interface
+Wire Notes Line
+	12350 7200 10050 7200
+Wire Wire Line
+	4150 4050 4300 4050
+Wire Wire Line
+	4250 6600 5100 6600
+Connection ~ 5400 8150
+Wire Wire Line
+	5400 8150 5750 8150
+Wire Wire Line
+	4850 8150 5400 8150
+$Comp
+L Device:C C101
+U 1 1 5BFEAD22
+P 4350 8450
+F 0 "C101" H 4465 8496 50  0000 L CNN
+F 1 "C" H 4465 8405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_6.3x5.4" H 4388 8300 50  0001 C CNN
+F 3 "~" H 4350 8450 50  0001 C CNN
+	1    4350 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5BFEAD88
+P 4350 8700
+F 0 "#PWR0101" H 4350 8450 50  0001 C CNN
+F 1 "GND" H 4350 8550 50  0000 C CNN
+F 2 "" H 4350 8700 50  0001 C CNN
+F 3 "" H 4350 8700 50  0001 C CNN
+	1    4350 8700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 8700 4350 8600
+Connection ~ 4850 8150
+Wire Wire Line
+	4350 8300 4350 8150
+Wire Wire Line
+	4350 8150 4850 8150
+$Comp
+L power:GND #PWR0109
+U 1 1 5C032EB0
+P 10600 8000
+F 0 "#PWR0109" H 10600 7750 50  0001 C CNN
+F 1 "GND" H 10600 7850 50  0000 C CNN
+F 2 "" H 10600 8000 50  0001 C CNN
+F 3 "" H 10600 8000 50  0001 C CNN
+	1    10600 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 8000 10600 7900
+Wire Wire Line
+	10600 7900 10750 7900
+Text GLabel 10550 7500 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	10550 7500 10750 7500
+Wire Notes Line
+	12350 8400 10050 8400
+Wire Notes Line
+	10050 8400 10050 7200
+Wire Notes Line
+	12350 7200 12350 8400
+Wire Wire Line
+	9150 7750 10750 7750
+Text GLabel 9300 8600 2    50   Input ~ 0
+PWOK
+Text GLabel 9300 8400 2    50   Input ~ 0
+PSON
+Wire Wire Line
+	9300 8600 9150 8600
+$Comp
+L 0002-ATX-rescue:Conn_01x03-conn J105
+U 1 1 5C0B42BD
+P 8950 7650
+F 0 "J105" H 8870 7967 50  0000 C CNN
+F 1 "Conn_01x03" H 8870 7876 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 8950 7650 50  0001 C CNN
+F 3 "~" H 8950 7650 50  0001 C CNN
+	1    8950 7650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 7550 9900 7550
+Wire Wire Line
+	9900 7550 9900 7650
+Wire Wire Line
+	9900 7650 10750 7650
+Wire Wire Line
+	9150 7650 9250 7650
+Wire Wire Line
+	9150 8500 9250 8500
+Wire Wire Line
+	9150 8400 9300 8400
+$Comp
+L 0002-ATX-rescue:Screw_Terminal_01x01-conn J103
+U 1 1 5C1397D2
+P 6750 9400
+F 0 "J103" H 6830 9442 50  0000 L CNN
+F 1 "Screw_Terminal_01x01" H 6830 9351 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_5.3mm_M5_Pad_Via" H 6750 9400 50  0001 C CNN
+F 3 "~" H 6750 9400 50  0001 C CNN
+	1    6750 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0002-ATX-rescue:Screw_Terminal_01x01-conn J102
+U 1 1 5C1399F0
+P 6750 9250
+F 0 "J102" H 6830 9292 50  0000 L CNN
+F 1 "Screw_Terminal_01x01" H 6830 9201 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_5.3mm_M5_Pad_Via" H 6750 9250 50  0001 C CNN
+F 3 "~" H 6750 9250 50  0001 C CNN
+	1    6750 9250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0002-ATX-rescue:Screw_Terminal_01x01-conn J104
+U 1 1 5C139A56
+P 6750 9550
+F 0 "J104" H 6830 9592 50  0000 L CNN
+F 1 "Screw_Terminal_01x01" H 6830 9501 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_5.3mm_M5_Pad_Via" H 6750 9550 50  0001 C CNN
+F 3 "~" H 6750 9550 50  0001 C CNN
+	1    6750 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5C139AF2
+P 6400 9650
+F 0 "#PWR0104" H 6400 9400 50  0001 C CNN
+F 1 "GND" H 6400 9500 50  0000 C CNN
+F 2 "" H 6400 9650 50  0001 C CNN
+F 3 "" H 6400 9650 50  0001 C CNN
+	1    6400 9650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 9650 6400 9550
+Wire Wire Line
+	6400 9400 6550 9400
+Wire Wire Line
+	6550 9550 6400 9550
+Text GLabel 6350 9250 0    50   Input ~ 0
+Vmain
+Wire Wire Line
+	6350 9250 6450 9250
+$Comp
+L 0002-ATX-rescue:Conn_01x04-conn J106
+U 1 1 5C18139B
+P 8950 8400
+F 0 "J106" H 8870 8717 50  0000 C CNN
+F 1 "Conn_01x04" H 8870 8626 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 8950 8400 50  0001 C CNN
+F 3 "~" H 8950 8400 50  0001 C CNN
+	1    8950 8400
+	-1   0    0    -1  
+$EndComp
+Text GLabel 9300 8300 2    50   Input ~ 0
+Vstby
+$Comp
+L power:GND #PWR0105
+U 1 1 5C189AAE
+P 9550 7950
+F 0 "#PWR0105" H 9550 7700 50  0001 C CNN
+F 1 "GND" H 9550 7800 50  0000 C CNN
+F 2 "" H 9550 7950 50  0001 C CNN
+F 3 "" H 9550 7950 50  0001 C CNN
+	1    9550 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 7650 9250 8500
+Wire Wire Line
+	9550 7950 9550 7650
+Wire Wire Line
+	9550 7650 9250 7650
+Connection ~ 9250 7650
+Wire Wire Line
+	9300 8300 9150 8300
+Wire Wire Line
+	6400 9400 6400 9550
+Connection ~ 6400 9550
+$Comp
+L 0002-ATX-rescue:Screw_Terminal_01x01-conn J101
+U 1 1 5C1CBC34
+P 6750 9100
+F 0 "J101" H 6830 9142 50  0000 L CNN
+F 1 "Screw_Terminal_01x01" H 6830 9051 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_5.3mm_M5_Pad_Via" H 6750 9100 50  0001 C CNN
+F 3 "~" H 6750 9100 50  0001 C CNN
+	1    6750 9100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 9100 6450 9100
+Wire Wire Line
+	6450 9100 6450 9250
+Connection ~ 6450 9250
+Wire Wire Line
+	6450 9250 6550 9250
+Wire Wire Line
+	5050 3900 5100 3900
+Text GLabel 4150 3500 0    50   Input ~ 0
+5Vsb
+Wire Wire Line
+	4150 3500 4300 3500
+Wire Wire Line
+	4300 3500 4300 3600
+$Comp
+L Device:R R1
+U 1 1 60307BF1
+P 4100 5050
+F 0 "R1" H 4170 5096 50  0000 L CNN
+F 1 "10K" H 4170 5005 50  0000 L CNN
+F 2 "AEvan:0805_R" V 4030 5050 50  0001 C CNN
+F 3 "~" H 4100 5050 50  0001 C CNN
+	1    4100 5050
+	1    0    0    -1  
+$EndComp
+Text GLabel 4000 4750 0    50   Input ~ 0
+5Vsb
+Wire Wire Line
+	4000 4750 4100 4750
+Wire Wire Line
+	4100 4750 4100 4900
+Wire Wire Line
+	4350 5400 4350 4650
+Wire Wire Line
+	4100 5200 4100 5400
+Wire Wire Line
+	4100 5400 4350 5400
+Connection ~ 4350 5400
+$Comp
+L Device:R R2
+U 1 1 6032C5FC
+P 7500 5800
+F 0 "R2" H 7570 5846 50  0000 L CNN
+F 1 "10K" H 7570 5755 50  0000 L CNN
+F 2 "AEvan:0805_R" V 7430 5800 50  0001 C CNN
+F 3 "~" H 7500 5800 50  0001 C CNN
+	1    7500 5800
+	1    0    0    -1  
+$EndComp
+Text GLabel 7400 5500 0    50   Input ~ 0
+5Vsb
+Wire Wire Line
+	7400 5500 7500 5500
+Wire Wire Line
+	7500 5500 7500 5650
+Wire Wire Line
+	7500 5950 7500 6150
+$Comp
+L Device:R R3
+U 1 1 6032FB31
+P 7900 5800
+F 0 "R3" H 7970 5846 50  0000 L CNN
+F 1 "10K" H 7970 5755 50  0000 L CNN
+F 2 "AEvan:0805_R" V 7830 5800 50  0001 C CNN
+F 3 "~" H 7900 5800 50  0001 C CNN
+	1    7900 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 6050 7900 5950
+Connection ~ 7900 6050
+Wire Wire Line
+	7900 6050 6750 6050
+Wire Wire Line
+	7900 5650 7900 5500
+Wire Wire Line
+	7900 5500 7500 5500
+Connection ~ 7500 5500
+$Comp
+L Device:R R5
+U 1 1 6036002F
+P 5900 3800
+F 0 "R5" V 5700 3700 50  0000 L CNN
+F 1 "54.68K" V 5800 3700 50  0000 L CNN
+F 2 "AEvan:0805_R" V 5830 3800 50  0001 C CNN
+F 3 "~" H 5900 3800 50  0001 C CNN
+	1    5900 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 3800 5750 3800
+Wire Wire Line
+	6150 3800 6150 3900
+Wire Wire Line
+	6050 3800 6150 3800
+Connection ~ 6150 3900
+Wire Wire Line
+	6150 3900 6400 3900
+$Comp
+L Device:R R?
+U 1 1 6036CC84
+P 7750 5150
+AR Path="/5B808B29/6036CC84" Ref="R?"  Part="1" 
+AR Path="/5B7EFFE7/6036CC84" Ref="R?"  Part="1" 
+AR Path="/5B80DE5C/6036CC84" Ref="R?"  Part="1" 
+AR Path="/6036CC84" Ref="R6"  Part="1" 
+F 0 "R6" V 7543 5150 50  0000 C CNN
+F 1 "32.7k" V 7634 5150 50  0000 C CNN
+F 2 "AEvan:0805_R" V 7680 5150 50  0001 C CNN
+F 3 "~" H 7750 5150 50  0001 C CNN
+	1    7750 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60377ABC
+P 7950 4950
+AR Path="/5B808B29/60377ABC" Ref="R?"  Part="1" 
+AR Path="/5B7EFFE7/60377ABC" Ref="R?"  Part="1" 
+AR Path="/5B80DE5C/60377ABC" Ref="R?"  Part="1" 
+AR Path="/60377ABC" Ref="R7"  Part="1" 
+F 0 "R7" H 8020 4996 50  0000 L CNN
+F 1 "10K" H 8020 4905 50  0000 L CNN
+F 2 "AEvan:0805_R" V 7880 4950 50  0001 C CNN
+F 3 "~" H 7950 4950 50  0001 C CNN
+	1    7950 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 5100 7950 5150
+$Comp
+L Device:R R?
+U 1 1 60377AC6
+P 8500 5150
+AR Path="/5B808B29/60377AC6" Ref="R?"  Part="1" 
+AR Path="/5B7EFFE7/60377AC6" Ref="R?"  Part="1" 
+AR Path="/5B80DE5C/60377AC6" Ref="R?"  Part="1" 
+AR Path="/60377AC6" Ref="R9"  Part="1" 
+F 0 "R9" V 8293 5150 50  0000 C CNN
+F 1 "1k" V 8384 5150 50  0000 C CNN
+F 2 "AEvan:0805_R" V 8430 5150 50  0001 C CNN
+F 3 "~" H 8500 5150 50  0001 C CNN
+	1    8500 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8650 5150 8700 5150
+$Comp
+L Device:C C?
+U 1 1 60377ACD
+P 8250 4650
+AR Path="/5B808B29/60377ACD" Ref="C?"  Part="1" 
+AR Path="/5B7EFFE7/60377ACD" Ref="C?"  Part="1" 
+AR Path="/5B80DE5C/60377ACD" Ref="C?"  Part="1" 
+AR Path="/60377ACD" Ref="C1"  Part="1" 
+F 0 "C1" H 8365 4696 50  0000 L CNN
+F 1 "10uF" H 8365 4605 50  0000 L CNN
+F 2 "AEvan:0805_C" H 8288 4500 50  0001 C CNN
+F 3 "~" H 8250 4650 50  0001 C CNN
+	1    8250 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60377AD3
+P 8250 4950
+AR Path="/5B808B29/60377AD3" Ref="R?"  Part="1" 
+AR Path="/5B7EFFE7/60377AD3" Ref="R?"  Part="1" 
+AR Path="/5B80DE5C/60377AD3" Ref="R?"  Part="1" 
+AR Path="/60377AD3" Ref="R8"  Part="1" 
+F 0 "R8" H 8320 4996 50  0000 L CNN
+F 1 "10" H 8320 4905 50  0000 L CNN
+F 2 "AEvan:0805_R" V 8180 4950 50  0001 C CNN
+F 3 "~" H 8250 4950 50  0001 C CNN
+	1    8250 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 5100 8250 5150
+Connection ~ 8250 5150
+Wire Wire Line
+	8250 5150 8350 5150
+Connection ~ 7950 5150
+Wire Wire Line
+	7950 5150 8250 5150
+Wire Wire Line
+	7900 5150 7950 5150
+$Sheet
+S 5100 5100 550  450 
+U 603813BC
+F0 "sheet603813B5" 50
+F1 "5V.sch" 50
+F2 "12V" I L 5100 5250 50 
+F3 "5V" I R 5650 5250 50 
+F4 "EN" I L 5100 5400 50 
+F5 "Pgood" I R 5650 5400 50 
+F6 "FB" I R 5650 5150 50 
+$EndSheet
+Text GLabel 5950 5250 2    50   Input ~ 0
+3V3
+Wire Wire Line
+	5650 5400 6900 5400
+Wire Wire Line
+	5650 5250 5950 5250
+Wire Wire Line
+	7600 5150 5650 5150
+Wire Wire Line
+	7950 4800 7950 4450
+Wire Wire Line
+	7950 4450 8250 4450
+Wire Wire Line
+	8250 4450 8250 4500
+Text GLabel 8300 4450 2    50   Input ~ 0
+3V3
+Wire Wire Line
+	8300 4450 8250 4450
+Connection ~ 8250 4450
+$EndSCHEMATC

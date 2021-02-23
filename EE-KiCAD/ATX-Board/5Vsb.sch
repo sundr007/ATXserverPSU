@@ -1,0 +1,251 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLedger 17000 11000
+encoding utf-8
+Sheet 5 9
+Title ""
+Date "2018-08-09"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C104
+U 1 1 5B6C6DDB
+P 5700 5000
+F 0 "C104" H 5815 5046 50  0000 L CNN
+F 1 "4.7uF" H 5815 4955 50  0000 L CNN
+F 2 "AEvan:0805_C" H 5738 4850 50  0001 C CNN
+F 3 "~" H 5700 5000 50  0001 C CNN
+	1    5700 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C105
+U 1 1 5B6C6EA9
+P 6250 5000
+F 0 "C105" H 6365 5046 50  0000 L CNN
+F 1 "100nF" H 6365 4955 50  0000 L CNN
+F 2 "AEvan:0805_C" H 6288 4850 50  0001 C CNN
+F 3 "~" H 6250 5000 50  0001 C CNN
+	1    6250 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C106
+U 1 1 5B6C6EE7
+P 8950 5100
+F 0 "C106" V 8698 5100 50  0000 C CNN
+F 1 "100nF" V 8789 5100 50  0000 C CNN
+F 2 "AEvan:0805_C" H 8988 4950 50  0001 C CNN
+F 3 "~" H 8950 5100 50  0001 C CNN
+	1    8950 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C107
+U 1 1 5B6C6F66
+P 10400 5450
+F 0 "C107" H 10515 5496 50  0000 L CNN
+F 1 "4.7uF" H 10515 5405 50  0000 L CNN
+F 2 "AEvan:0805_C" H 10438 5300 50  0001 C CNN
+F 3 "~" H 10400 5450 50  0001 C CNN
+	1    10400 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R102
+U 1 1 5B6C7050
+P 6800 5000
+F 0 "R102" H 6870 5091 50  0000 L CNN
+F 1 "10K" H 6870 5000 50  0000 L CNN
+F 2 "AEvan:0805_R" H 6870 4909 50  0000 L CNN
+F 3 "~" H 6800 5000 50  0001 C CNN
+	1    6800 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R103
+U 1 1 5B6C7126
+P 9900 5450
+F 0 "R103" H 9970 5496 50  0000 L CNN
+F 1 "54.9K" H 9970 5405 50  0000 L CNN
+F 2 "AEvan:0805_R" V 9830 5450 50  0001 C CNN
+F 3 "~" H 9900 5450 50  0001 C CNN
+	1    9900 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R104
+U 1 1 5B6C7206
+P 9900 5850
+F 0 "R104" H 9970 5896 50  0000 L CNN
+F 1 "10K" H 9970 5805 50  0000 L CNN
+F 2 "AEvan:0805_R" V 9830 5850 50  0001 C CNN
+F 3 "~" H 9900 5850 50  0001 C CNN
+	1    9900 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L101
+U 1 1 5B6C72CE
+P 9450 5250
+F 0 "L101" V 9640 5250 50  0000 C CNN
+F 1 "4.7uH" V 9549 5250 50  0000 C CNN
+F 2 "Inductor_SMD:L_6.3x6.3_H3" H 9450 5250 50  0001 C CNN
+F 3 "~" H 9450 5250 50  0001 C CNN
+	1    9450 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9600 5250 9900 5250
+Wire Wire Line
+	10400 5300 10400 5250
+Connection ~ 10400 5250
+Wire Wire Line
+	9900 5300 9900 5250
+Connection ~ 9900 5250
+Wire Wire Line
+	9900 5250 10400 5250
+Wire Wire Line
+	9900 5600 9900 5650
+Wire Wire Line
+	9900 5650 8900 5650
+Wire Wire Line
+	8900 5650 8900 5400
+Wire Wire Line
+	8900 5400 8650 5400
+Connection ~ 9900 5650
+Wire Wire Line
+	9900 5650 9900 5700
+Wire Wire Line
+	9300 5250 9150 5250
+Wire Wire Line
+	9100 5100 9150 5100
+Wire Wire Line
+	9150 5100 9150 5250
+Connection ~ 9150 5250
+Wire Wire Line
+	9150 5250 8650 5250
+Wire Wire Line
+	8800 5100 8650 5100
+Wire Wire Line
+	9900 6000 9900 6200
+Wire Wire Line
+	9900 6200 10400 6200
+Wire Wire Line
+	10400 5600 10400 6200
+Connection ~ 10400 6200
+Wire Wire Line
+	9900 6200 7600 6200
+Wire Wire Line
+	5700 6200 5700 5150
+Connection ~ 9900 6200
+Wire Wire Line
+	6250 5150 6250 6200
+Connection ~ 6250 6200
+Wire Wire Line
+	6250 6200 5700 6200
+Wire Wire Line
+	6800 5150 6800 5250
+Wire Wire Line
+	6800 5250 7750 5250
+Wire Wire Line
+	7750 5100 7600 5100
+Wire Wire Line
+	7600 5100 7600 4750
+Wire Wire Line
+	7600 4750 6800 4750
+Wire Wire Line
+	5700 4750 5700 4850
+Wire Wire Line
+	6250 4850 6250 4750
+Connection ~ 6250 4750
+Wire Wire Line
+	6250 4750 5700 4750
+Wire Wire Line
+	6800 4850 6800 4750
+Connection ~ 6800 4750
+Wire Wire Line
+	6800 4750 6250 4750
+Wire Wire Line
+	5700 4750 5450 4750
+Connection ~ 5700 4750
+Wire Wire Line
+	7750 5400 7600 5400
+Wire Wire Line
+	7600 5400 7600 6200
+Connection ~ 7600 6200
+Wire Wire Line
+	7600 6200 6250 6200
+Text HLabel 11700 5250 2    50   Input ~ 0
+5Vsb
+Text HLabel 5450 4750 0    50   Input ~ 0
+12V
+$Comp
+L power:GND #PWR0110
+U 1 1 5B6CCA80
+P 5700 6300
+F 0 "#PWR0110" H 5700 6050 50  0001 C CNN
+F 1 "GND" H 5705 6127 50  0000 C CNN
+F 2 "" H 5700 6300 50  0001 C CNN
+F 3 "" H 5700 6300 50  0001 C CNN
+	1    5700 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 6300 5700 6200
+Connection ~ 5700 6200
+Text Notes 5800 4650 0    50   ~ 0
+Cin = 10uF and 0.1uF
+Text Notes 5800 4550 0    50   ~ 0
+UVLO = 4V on and 3.6V off\n
+Text Notes 8900 5650 0    50   ~ 0
+Vref = 0.768V
+Text Notes 8700 4650 0    50   ~ 0
+Cboot = 0.1uF
+Text Notes 9300 4900 0    50   ~ 0
+Lout for 5V = 4.7uH
+Text Notes 10400 5200 0    50   ~ 0
+Cout = 22 to 68 uF
+Text Notes 7950 4350 0    50   ~ 0
+OCP is 2.4Amin, 3.2A typical, leads to UVP\nOTP=160C, 25C hyst\nSoft Start=1ms\nUVP = 65%, 1.8ms delay\n15ms hiccup
+$Comp
+L 0002-ATX-rescue:TPS56220X-_ArtesynParts U101
+U 1 1 5B6DFF87
+P 8200 5250
+F 0 "U101" H 8200 5665 50  0000 C CNN
+F 1 "TPS56220X" H 8200 5574 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 8300 4950 50  0001 C CNN
+F 3 "" H 8050 5150 50  0001 C CNN
+	1    8200 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11400 6200 11400 5600
+Wire Wire Line
+	11400 5300 11400 5250
+Connection ~ 11400 5250
+Wire Wire Line
+	11400 5250 11700 5250
+Wire Wire Line
+	10400 5250 11400 5250
+Wire Wire Line
+	10400 6200 11400 6200
+$Comp
+L Device:C C108
+U 1 1 601E8DCF
+P 11400 5450
+F 0 "C108" H 11515 5496 50  0000 L CNN
+F 1 "47uF" H 11515 5405 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-15_AVX-H" H 11438 5300 50  0001 C CNN
+F 3 "~" H 11400 5450 50  0001 C CNN
+F 4 "718-2167-1-ND" H 11400 5450 50  0001 C CNN "Digikey_PN"
+	1    11400 5450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

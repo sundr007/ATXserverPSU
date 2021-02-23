@@ -1,0 +1,393 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 2N7000-dk_Transistors-FETs-MOSFETs-Single
+#
+DEF 2N7000-dk_Transistors-FETs-MOSFETs-Single Q 0 0 Y Y 1 F N
+F0 "Q" -106 143 60 H V R CNN
+F1 "2N7000-dk_Transistors-FETs-MOSFETs-Single" 136 0 60 V V C CNN
+F2 "digikey-footprints:TO-92-3" 200 200 60 H I L CNN
+F3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" 200 300 60 H I L CNN
+F4 "2N7000FS-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "2N7000" 200 500 60 H I L CNN "MPN"
+F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
+F7 "Transistors - FETs, MOSFETs - Single" 200 700 60 H I L CNN "Family"
+F8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "MOSFET N-CH 60V 200MA TO-92" 200 1000 60 H I L CNN "Description"
+F11 "ON Semiconductor" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C -50 0 130 0 1 0 f
+C 0 -75 5 0 1 0 N
+C 0 -55 5 0 1 0 N
+C 0 75 5 0 1 0 N
+P 2 0 1 0 0 -55 -100 -55 N
+P 3 0 1 0 -200 -100 -120 -100 -120 55 N
+P 3 0 1 0 0 -100 0 0 -100 0 N
+P 3 0 1 0 0 100 0 55 -100 55 N
+P 5 0 1 0 -5 -75 40 -75 40 55 40 75 -5 75 N
+P 2 1 1 0 -100 -55 -100 -75 N
+P 2 1 1 0 -100 -55 -100 -35 N
+P 2 1 1 0 -100 0 -100 -20 N
+P 2 1 1 0 -100 0 -100 20 N
+P 2 1 1 0 -100 75 -100 35 N
+P 2 1 1 0 60 20 20 20 N
+P 4 1 1 0 -100 0 -70 20 -70 -20 -100 0 F
+P 4 1 1 0 40 20 20 -10 60 -10 40 20 F
+X S 1 0 -200 100 U 50 50 1 1 B
+X G 2 -300 -100 100 R 50 50 1 1 B
+X D 3 0 200 100 D 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# BSC026N08NS5ATMA1-transistors
+#
+DEF BSC026N08NS5ATMA1-transistors Q 0 0 Y N 1 F N
+F0 "Q" -200 300 50 H V L CNN
+F1 "BSC026N08NS5ATMA1-transistors" -200 -250 50 H V L CNN
+F2 "TO_SOT_Packages_SMD:TDSON-8-1" 0 200 50 H I C CIN
+F3 "" 0 0 50 V I L CNN
+$FPLIST
+ TDSON*
+$ENDFPLIST
+DRAW
+C -150 75 5 0 0 10 N
+C -50 75 5 0 0 10 N
+C 50 75 5 0 0 10 N
+C 150 75 5 0 0 10 N
+C -150 100 5 0 1 10 N
+C 0 50 111 0 1 8 N
+C 150 0 5 0 1 10 N
+C 150 100 5 0 1 10 N
+T 0 125 100 30 0 0 0 D Normal 0 C C
+T 0 -70 -70 30 0 0 0 G Normal 0 C C
+T 0 -125 100 30 0 0 0 S Normal 0 C C
+S -200 250 200 -200 0 1 10 f
+P 2 0 0 0 -200 100 -150 100 N
+P 2 0 0 0 -50 75 -150 75 N
+P 2 0 0 0 200 100 150 100 N
+P 4 0 0 0 -50 25 -50 110 50 110 50 25 N
+P 4 0 0 0 5 110 -15 120 -15 100 5 110 F
+P 4 0 0 0 15 125 10 120 10 100 5 95 N
+P 2 0 1 0 -200 -100 -50 -100 N
+P 2 0 1 15 -65 25 -35 25 N
+P 2 0 1 0 -50 -100 -50 0 N
+P 2 0 1 15 -15 25 15 25 N
+P 2 0 1 15 35 25 65 25 N
+P 2 0 1 0 50 75 150 75 N
+P 2 0 1 0 200 0 150 0 N
+P 3 0 1 10 -60 0 60 0 60 0 N
+P 3 0 1 0 0 25 0 75 -50 75 N
+P 4 0 1 0 -200 0 -150 0 -150 200 -200 200 N
+P 4 0 1 0 -10 65 10 65 0 40 -10 65 F
+P 4 0 1 0 200 200 150 200 150 -100 200 -100 N
+X S 1 -300 200 100 R 50 50 1 1 P
+X S 2 -300 100 100 R 50 50 1 1 P
+X S 3 -300 0 100 R 50 50 1 1 P
+X G 4 -300 -100 100 R 50 50 1 1 P
+X D 5 300 -100 100 L 50 50 1 1 P
+X D 5 300 0 100 L 50 50 1 1 P
+X D 5 300 100 100 L 50 50 1 1 P
+X D 5 300 200 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Conn_01x03-conn
+#
+DEF Conn_01x03-conn J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Conn_01x03-conn" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -150 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Conn_01x04-conn
+#
+DEF Conn_01x04-conn J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Conn_01x04-conn" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -250 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+X Pin_4 4 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Conn_01x06-conn
+#
+DEF Conn_01x06-conn J 0 40 Y N 1 F N
+F0 "J" 0 300 50 H V C CNN
+F1 "Conn_01x06-conn" 0 -400 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+S -50 -295 0 -305 1 1 6 N
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 250 50 -350 1 1 10 f
+X Pin_1 1 -200 200 150 R 50 50 1 1 P
+X Pin_2 2 -200 100 150 R 50 50 1 1 P
+X Pin_3 3 -200 0 150 R 50 50 1 1 P
+X Pin_4 4 -200 -100 150 R 50 50 1 1 P
+X Pin_5 5 -200 -200 150 R 50 50 1 1 P
+X Pin_6 6 -200 -300 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Conn_02x03_Top_Bottom-conn
+#
+DEF Conn_02x03_Top_Bottom-conn J 0 40 Y N 1 F N
+F0 "J" 50 200 50 H V C CNN
+F1 "Conn_02x03_Top_Bottom-conn" 50 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*2x??x*mm*
+ Connector*:*2x???Pitch*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 150 -150 1 1 10 f
+S 150 -95 100 -105 1 1 6 N
+S 150 5 100 -5 1 1 6 N
+S 150 105 100 95 1 1 6 N
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+X Pin_4 4 300 100 150 L 50 50 1 1 P
+X Pin_5 5 300 0 150 L 50 50 1 1 P
+X Pin_6 6 300 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Conn_02x04_Top_Bottom-conn
+#
+DEF Conn_02x04_Top_Bottom-conn J 0 40 Y N 1 F N
+F0 "J" 50 200 50 H V C CNN
+F1 "Conn_02x04_Top_Bottom-conn" 50 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*2x??x*mm*
+ Connector*:*2x???Pitch*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 150 -250 1 1 10 f
+S 150 -195 100 -205 1 1 6 N
+S 150 -95 100 -105 1 1 6 N
+S 150 5 100 -5 1 1 6 N
+S 150 105 100 95 1 1 6 N
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+X Pin_4 4 -200 -200 150 R 50 50 1 1 P
+X Pin_5 5 300 100 150 L 50 50 1 1 P
+X Pin_6 6 300 0 150 L 50 50 1 1 P
+X Pin_7 7 300 -100 150 L 50 50 1 1 P
+X Pin_8 8 300 -200 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Conn_02x05_Top_Bottom-conn
+#
+DEF Conn_02x05_Top_Bottom-conn J 0 40 Y N 1 F N
+F0 "J" 50 300 50 H V C CNN
+F1 "Conn_02x05_Top_Bottom-conn" 50 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*2x??x*mm*
+ Connector*:*2x???Pitch*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 250 150 -250 1 1 10 f
+S 150 -195 100 -205 1 1 6 N
+S 150 -95 100 -105 1 1 6 N
+S 150 5 100 -5 1 1 6 N
+S 150 105 100 95 1 1 6 N
+S 150 205 100 195 1 1 6 N
+X Pin_1 1 -200 200 150 R 50 50 1 1 P
+X Pin_10 10 300 -200 150 L 50 50 1 1 P
+X Pin_2 2 -200 100 150 R 50 50 1 1 P
+X Pin_3 3 -200 0 150 R 50 50 1 1 P
+X Pin_4 4 -200 -100 150 R 50 50 1 1 P
+X Pin_5 5 -200 -200 150 R 50 50 1 1 P
+X Pin_6 6 300 200 150 L 50 50 1 1 P
+X Pin_7 7 300 100 150 L 50 50 1 1 P
+X Pin_8 8 300 0 150 L 50 50 1 1 P
+X Pin_9 9 300 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Conn_02x09_Top_Bottom-conn
+#
+DEF Conn_02x09_Top_Bottom-conn J 0 40 Y N 1 F N
+F0 "J" 50 500 50 H V C CNN
+F1 "Conn_02x09_Top_Bottom-conn" 50 -500 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*2x??x*mm*
+ Connector*:*2x???Pitch*
+$ENDFPLIST
+DRAW
+S -50 -395 0 -405 1 1 6 N
+S -50 -295 0 -305 1 1 6 N
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 305 0 295 1 1 6 N
+S -50 405 0 395 1 1 6 N
+S -50 450 150 -450 1 1 10 f
+S 150 -395 100 -405 1 1 6 N
+S 150 -295 100 -305 1 1 6 N
+S 150 -195 100 -205 1 1 6 N
+S 150 -95 100 -105 1 1 6 N
+S 150 5 100 -5 1 1 6 N
+S 150 105 100 95 1 1 6 N
+S 150 205 100 195 1 1 6 N
+S 150 305 100 295 1 1 6 N
+S 150 405 100 395 1 1 6 N
+X Pin_1 1 -200 400 150 R 50 50 1 1 P
+X Pin_10 10 300 400 150 L 50 50 1 1 P
+X Pin_11 11 300 300 150 L 50 50 1 1 P
+X Pin_12 12 300 200 150 L 50 50 1 1 P
+X Pin_13 13 300 100 150 L 50 50 1 1 P
+X Pin_14 14 300 0 150 L 50 50 1 1 P
+X Pin_15 15 300 -100 150 L 50 50 1 1 P
+X Pin_16 16 300 -200 150 L 50 50 1 1 P
+X Pin_17 17 300 -300 150 L 50 50 1 1 P
+X Pin_18 18 300 -400 150 L 50 50 1 1 P
+X Pin_2 2 -200 300 150 R 50 50 1 1 P
+X Pin_3 3 -200 200 150 R 50 50 1 1 P
+X Pin_4 4 -200 100 150 R 50 50 1 1 P
+X Pin_5 5 -200 0 150 R 50 50 1 1 P
+X Pin_6 6 -200 -100 150 R 50 50 1 1 P
+X Pin_7 7 -200 -200 150 R 50 50 1 1 P
+X Pin_8 8 -200 -300 150 R 50 50 1 1 P
+X Pin_9 9 -200 -400 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Screw_Terminal_01x01-conn
+#
+DEF Screw_Terminal_01x01-conn J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Screw_Terminal_01x01-conn" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*Terminal*Block*:*
+ TerminalBlock*
+$ENDFPLIST
+DRAW
+C 0 0 25 1 1 6 N
+S -50 50 50 -50 1 1 10 f
+P 2 1 1 6 -21 13 13 -20 N
+P 2 1 1 6 -14 20 20 -13 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# TPS53015-_ArtesynParts
+#
+DEF TPS53015-_ArtesynParts U 0 40 Y Y 1 F N
+F0 "U" -300 500 50 H V C CNN
+F1 "TPS53015-_ArtesynParts" -150 400 50 H V C CNN
+F2 "Artesyn:VSSOP-10_2.4x2.1mm_Pitch0.5mm" 50 -400 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ VSSOP-10
+$ENDFPLIST
+DRAW
+S -350 350 300 -350 0 1 0 N
+X Vfb 1 -550 -300 200 R 50 50 1 1 I
+X Vbst 10 500 300 200 L 50 50 1 1 I
+X PG 2 -550 150 200 R 50 50 1 1 I
+X VREG5 3 -550 -150 200 R 50 50 1 1 I
+X EN 4 -550 0 200 R 50 50 1 1 I
+X Vin 5 -550 300 200 R 50 50 1 1 I
+X PGND 6 500 -300 200 L 50 50 1 1 I
+X DRVL 7 500 -150 200 L 50 50 1 1 I
+X SW 8 500 0 200 L 50 50 1 1 I
+X DRVH 9 500 150 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# TPS56220X-_ArtesynParts
+#
+DEF TPS56220X-_ArtesynParts U 0 40 Y Y 1 F N
+F0 "U" -200 400 50 H V C CNN
+F1 "TPS56220X-_ArtesynParts" -50 300 50 H V C CNN
+F2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" 100 -300 50 H I C CNN
+F3 "" -150 -100 50 H I C CNN
+DRAW
+S 250 -250 -250 250 0 1 0 N
+X GND 1 -450 -150 200 R 50 50 1 1 I
+X SW 2 450 0 200 L 50 50 1 1 O
+X Vin 3 -450 150 200 R 50 50 1 1 I
+X Vfb 4 450 -150 200 L 50 50 1 1 I
+X EN 5 -450 0 200 R 50 50 1 1 I
+X Vbst 6 450 150 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,0 +1,787 @@
+EESchema Schematic File Version 4
+LIBS:0002-ATX-cache
+EELAYER 30 0
+EELAYER END
+$Descr USLedger 17000 11000
+encoding utf-8
+Sheet 7 9
+Title ""
+Date "2018-08-24"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 0002-ATX-rescue:TPS53015-_ArtesynParts U?
+U 1 1 5B80E434
+P 8100 5250
+AR Path="/5B808B29/5B80E434" Ref="U?"  Part="1" 
+AR Path="/5B7EFFE7/5B80E434" Ref="U?"  Part="1" 
+AR Path="/5B80DE5C/5B80E434" Ref="U103"  Part="1" 
+AR Path="/5B80E434" Ref="U?"  Part="1" 
+F 0 "U103" H 8075 5775 50  0000 C CNN
+F 1 "TPS53015" H 8075 5684 50  0000 C CNN
+F 2 "AEvan:VSSOP-10_2.4x2.1mm_Pitch0.5mm" H 8150 4850 50  0001 C CNN
+F 3 "" H 8100 5250 50  0001 C CNN
+	1    8100 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0002-ATX-rescue:BSC026N08NS5ATMA1-transistors Q?
+U 1 1 5B80E43B
+P 9900 4800
+AR Path="/5B808B29/5B80E43B" Ref="Q?"  Part="1" 
+AR Path="/5B7EFFE7/5B80E43B" Ref="Q?"  Part="1" 
+AR Path="/5B80DE5C/5B80E43B" Ref="Q105"  Part="1" 
+F 0 "Q105" V 9946 4570 50  0000 R CNN
+F 1 "BSC026N08NS5ATMA1" V 9855 4570 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:TDSON-8-1" H 9900 5000 50  0001 C CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BSC026N08NS5-DS-v02_01-EN.pdf?fileId=5546d4624ad04ef9014ae2eace7629e0" V 9900 4800 50  0001 L CNN
+	1    9900 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 0002-ATX-rescue:BSC026N08NS5ATMA1-transistors Q?
+U 1 1 5B80E442
+P 9900 5650
+AR Path="/5B808B29/5B80E442" Ref="Q?"  Part="1" 
+AR Path="/5B7EFFE7/5B80E442" Ref="Q?"  Part="1" 
+AR Path="/5B80DE5C/5B80E442" Ref="Q106"  Part="1" 
+F 0 "Q106" V 9946 5420 50  0000 R CNN
+F 1 "BSC026N08NS5ATMA1" V 9855 5420 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:TDSON-8-1" H 9900 5850 50  0001 C CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BSC026N08NS5-DS-v02_01-EN.pdf?fileId=5546d4624ad04ef9014ae2eace7629e0" V 9900 5650 50  0001 L CNN
+	1    9900 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5B80E449
+P 11700 5250
+AR Path="/5B808B29/5B80E449" Ref="L?"  Part="1" 
+AR Path="/5B7EFFE7/5B80E449" Ref="L?"  Part="1" 
+AR Path="/5B80DE5C/5B80E449" Ref="L103"  Part="1" 
+F 0 "L103" V 11890 5250 50  0000 C CNN
+F 1 "L" V 11799 5250 50  0000 C CNN
+F 2 "Inductor_SMD:L_12x12mm_H8mm" H 11700 5250 50  0001 C CNN
+F 3 "~" H 11700 5250 50  0001 C CNN
+	1    11700 5250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5B80E450
+P 12150 5450
+AR Path="/5B808B29/5B80E450" Ref="C?"  Part="1" 
+AR Path="/5B7EFFE7/5B80E450" Ref="C?"  Part="1" 
+AR Path="/5B80DE5C/5B80E450" Ref="C125"  Part="1" 
+F 0 "C125" H 12265 5496 50  0000 L CNN
+F 1 "4.7uF" H 12265 5405 50  0000 L CNN
+F 2 "AEvan:0805_C" H 12188 5300 50  0001 C CNN
+F 3 "~" H 12150 5450 50  0001 C CNN
+	1    12150 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5B80E457
+P 12600 5450
+AR Path="/5B808B29/5B80E457" Ref="C?"  Part="1" 
+AR Path="/5B7EFFE7/5B80E457" Ref="C?"  Part="1" 
+AR Path="/5B80DE5C/5B80E457" Ref="C126"  Part="1" 
+F 0 "C126" H 12715 5496 50  0000 L CNN
+F 1 "4.7uF" H 12715 5405 50  0000 L CNN
+F 2 "AEvan:0805_C" H 12638 5300 50  0001 C CNN
+F 3 "~" H 12600 5450 50  0001 C CNN
+	1    12600 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5B80E45E
+P 13000 5450
+AR Path="/5B808B29/5B80E45E" Ref="C?"  Part="1" 
+AR Path="/5B7EFFE7/5B80E45E" Ref="C?"  Part="1" 
+AR Path="/5B80DE5C/5B80E45E" Ref="C127"  Part="1" 
+F 0 "C127" H 13115 5496 50  0000 L CNN
+F 1 "330uF" H 13115 5405 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm" H 13038 5300 50  0001 C CNN
+F 3 "~" H 13000 5450 50  0001 C CNN
+	1    13000 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5B80E465
+P 13400 5450
+AR Path="/5B808B29/5B80E465" Ref="C?"  Part="1" 
+AR Path="/5B7EFFE7/5B80E465" Ref="C?"  Part="1" 
+AR Path="/5B80DE5C/5B80E465" Ref="C128"  Part="1" 
+F 0 "C128" H 13515 5496 50  0000 L CNN
+F 1 "330uF" H 13515 5405 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm" H 13438 5300 50  0001 C CNN
+F 3 "~" H 13400 5450 50  0001 C CNN
+	1    13400 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5B80E46C
+P 8950 4950
+AR Path="/5B808B29/5B80E46C" Ref="C?"  Part="1" 
+AR Path="/5B7EFFE7/5B80E46C" Ref="C?"  Part="1" 
+AR Path="/5B80DE5C/5B80E46C" Ref="C123"  Part="1" 
+F 0 "C123" V 8698 4950 50  0000 C CNN
+F 1 "100nF" V 8789 4950 50  0000 C CNN
+F 2 "AEvan:0805_C" H 8988 4800 50  0001 C CNN
+F 3 "~" H 8950 4950 50  0001 C CNN
+	1    8950 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5B80E473
+P 11300 5900
+AR Path="/5B808B29/5B80E473" Ref="C?"  Part="1" 
+AR Path="/5B7EFFE7/5B80E473" Ref="C?"  Part="1" 
+AR Path="/5B80DE5C/5B80E473" Ref="C124"  Part="1" 
+F 0 "C124" H 11415 5946 50  0000 L CNN
+F 1 "680pF" H 11415 5855 50  0000 L CNN
+F 2 "AEvan:0805_C" H 11338 5750 50  0001 C CNN
+F 3 "~" H 11300 5900 50  0001 C CNN
+	1    11300 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5B80E47A
+P 7400 6150
+AR Path="/5B808B29/5B80E47A" Ref="C?"  Part="1" 
+AR Path="/5B7EFFE7/5B80E47A" Ref="C?"  Part="1" 
+AR Path="/5B80DE5C/5B80E47A" Ref="C122"  Part="1" 
+F 0 "C122" H 7515 6196 50  0000 L CNN
+F 1 "T.S." H 7515 6105 50  0000 L CNN
+F 2 "AEvan:0805_C" H 7438 6000 50  0001 C CNN
+F 3 "~" H 7400 6150 50  0001 C CNN
+	1    7400 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5B80E481
+P 6950 6150
+AR Path="/5B808B29/5B80E481" Ref="C?"  Part="1" 
+AR Path="/5B7EFFE7/5B80E481" Ref="C?"  Part="1" 
+AR Path="/5B80DE5C/5B80E481" Ref="C121"  Part="1" 
+F 0 "C121" H 7065 6196 50  0000 L CNN
+F 1 "4.7uF" H 7065 6105 50  0000 L CNN
+F 2 "AEvan:0805_C" H 6988 6000 50  0000 C CNN
+F 3 "~" H 6950 6150 50  0001 C CNN
+	1    6950 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5B80E488
+P 6000 5150
+AR Path="/5B808B29/5B80E488" Ref="C?"  Part="1" 
+AR Path="/5B7EFFE7/5B80E488" Ref="C?"  Part="1" 
+AR Path="/5B80DE5C/5B80E488" Ref="C120"  Part="1" 
+F 0 "C120" H 6115 5196 50  0000 L CNN
+F 1 "100nF" H 6115 5105 50  0000 L CNN
+F 2 "AEvan:0805_C" H 6038 5000 50  0001 C CNN
+F 3 "~" H 6000 5150 50  0001 C CNN
+	1    6000 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5B80E48F
+P 5650 5150
+AR Path="/5B808B29/5B80E48F" Ref="C?"  Part="1" 
+AR Path="/5B7EFFE7/5B80E48F" Ref="C?"  Part="1" 
+AR Path="/5B80DE5C/5B80E48F" Ref="C119"  Part="1" 
+F 0 "C119" H 5765 5196 50  0000 L CNN
+F 1 "10uF" H 5765 5105 50  0000 L CNN
+F 2 "AEvan:0805_C" H 5688 5000 50  0001 C CNN
+F 3 "~" H 5650 5150 50  0001 C CNN
+	1    5650 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5B80E496
+P 10000 6350
+AR Path="/5B808B29/5B80E496" Ref="R?"  Part="1" 
+AR Path="/5B7EFFE7/5B80E496" Ref="R?"  Part="1" 
+AR Path="/5B80DE5C/5B80E496" Ref="R113"  Part="1" 
+F 0 "R113" H 10070 6396 50  0000 L CNN
+F 1 "6.8K" H 10070 6305 50  0000 L CNN
+F 2 "AEvan:0805_R" V 9930 6350 50  0001 C CNN
+F 3 "~" H 10000 6350 50  0001 C CNN
+	1    10000 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5B80E49D
+P 11300 5450
+AR Path="/5B808B29/5B80E49D" Ref="R?"  Part="1" 
+AR Path="/5B7EFFE7/5B80E49D" Ref="R?"  Part="1" 
+AR Path="/5B80DE5C/5B80E49D" Ref="R114"  Part="1" 
+F 0 "R114" H 11370 5496 50  0000 L CNN
+F 1 "5.01" H 11370 5405 50  0000 L CNN
+F 2 "AEvan:0805_R" V 11230 5450 50  0001 C CNN
+F 3 "~" H 11300 5450 50  0001 C CNN
+	1    11300 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5B80E4A4
+P 7750 6150
+AR Path="/5B808B29/5B80E4A4" Ref="R?"  Part="1" 
+AR Path="/5B7EFFE7/5B80E4A4" Ref="R?"  Part="1" 
+AR Path="/5B80DE5C/5B80E4A4" Ref="R111"  Part="1" 
+F 0 "R111" H 7820 6196 50  0000 L CNN
+F 1 "10K" H 7820 6105 50  0000 L CNN
+F 2 "AEvan:0805_R" V 7680 6150 50  0001 C CNN
+F 3 "~" H 7750 6150 50  0001 C CNN
+	1    7750 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5B80E4AB
+P 8100 5900
+AR Path="/5B808B29/5B80E4AB" Ref="R?"  Part="1" 
+AR Path="/5B7EFFE7/5B80E4AB" Ref="R?"  Part="1" 
+AR Path="/5B80DE5C/5B80E4AB" Ref="R112"  Part="1" 
+F 0 "R112" V 7893 5900 50  0000 C CNN
+F 1 "32.7k" V 7984 5900 50  0000 C CNN
+F 2 "AEvan:0805_R" V 8030 5900 50  0001 C CNN
+F 3 "~" H 8100 5900 50  0001 C CNN
+	1    8100 5900
+	0    1    1    0   
+$EndComp
+Text Notes 10850 4650 0    50   ~ 0
+OVP=120%\nUVP=68%, 1m delay, OCP leads to this\nBoth latch off, EN turns back on\nInternal OTP at 150C\nSoft Start=1.4ms
+Text Notes 8200 4150 0    50   ~ 0
+Bootstrap cap 10V 0.1uF min
+Text Notes 6100 4200 0    50   ~ 0
+UVLO = 5V\nVin needs a 0.1uF cap
+Text Notes 6500 6950 0    50   ~ 0
+Creg5 cap = 4.7uF
+Text Notes 7700 6900 0    50   ~ 0
+R1 = ((Vout/0.73)-1)*R2\nR2 between 10K and 100K
+Text Notes 7450 5850 0    50   ~ 0
+Vref = 0.73V
+Text Notes 10450 7050 0    50   ~ 0
+OCP - measure across lower FET\nR on lower FET sets trip voltage\nIocp = (((Vin-Vout)/(2*L*Fsw)*(Vout/Vin)+(Vtrip/Rds(on))\nVtrip = 0.5V with 6.8K resistor
+Text HLabel 5100 4300 0    50   Input ~ 0
+12V
+Text HLabel 15250 5250 2    50   Input ~ 0
+3V3
+$Comp
+L power:GND #PWR?
+U 1 1 5B80E4C9
+P 5650 6800
+AR Path="/5B808B29/5B80E4C9" Ref="#PWR?"  Part="1" 
+AR Path="/5B7EFFE7/5B80E4C9" Ref="#PWR?"  Part="1" 
+AR Path="/5B80DE5C/5B80E4C9" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 5650 6550 50  0001 C CNN
+F 1 "GND" H 5655 6627 50  0000 C CNN
+F 2 "" H 5650 6800 50  0001 C CNN
+F 3 "" H 5650 6800 50  0001 C CNN
+	1    5650 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 5250 9300 5250
+Wire Wire Line
+	9700 5100 9700 5250
+Connection ~ 9700 5250
+Wire Wire Line
+	9700 5250 9800 5250
+Wire Wire Line
+	9700 5350 9700 5250
+Wire Wire Line
+	9800 5350 9800 5250
+Connection ~ 9800 5250
+Wire Wire Line
+	9800 5250 9900 5250
+Wire Wire Line
+	9900 5350 9900 5250
+Connection ~ 9900 5250
+Wire Wire Line
+	9900 5250 10000 5250
+Wire Wire Line
+	10000 5350 10000 5250
+Wire Wire Line
+	9900 5100 9900 5250
+Wire Wire Line
+	9800 5100 9800 5250
+Wire Wire Line
+	5100 4300 5650 4300
+Wire Wire Line
+	10000 4300 10000 4500
+Wire Wire Line
+	9900 4500 9900 4300
+Connection ~ 9900 4300
+Wire Wire Line
+	9900 4300 10000 4300
+Wire Wire Line
+	9800 4500 9800 4300
+Connection ~ 9800 4300
+Wire Wire Line
+	9800 4300 9900 4300
+Wire Wire Line
+	9700 4500 9700 4300
+Connection ~ 9700 4300
+Wire Wire Line
+	9700 4300 9800 4300
+Wire Wire Line
+	9900 5950 9900 6000
+Wire Wire Line
+	9900 6700 10000 6700
+Wire Wire Line
+	13400 6700 13400 5600
+Wire Wire Line
+	13400 5300 13400 5250
+Wire Wire Line
+	13400 5250 13000 5250
+Wire Wire Line
+	12150 5300 12150 5250
+Connection ~ 12150 5250
+Wire Wire Line
+	12600 5300 12600 5250
+Connection ~ 12600 5250
+Wire Wire Line
+	12600 5250 12150 5250
+Wire Wire Line
+	13000 5300 13000 5250
+Connection ~ 13000 5250
+Wire Wire Line
+	13000 5250 12600 5250
+Wire Wire Line
+	11300 5300 11300 5250
+Connection ~ 11300 5250
+Wire Wire Line
+	11300 5250 11550 5250
+Wire Wire Line
+	11300 5600 11300 5750
+Wire Wire Line
+	11300 6050 11300 6700
+Connection ~ 11300 6700
+Wire Wire Line
+	11300 6700 12150 6700
+Wire Wire Line
+	12150 5600 12150 6700
+Connection ~ 12150 6700
+Wire Wire Line
+	12150 6700 12600 6700
+Wire Wire Line
+	12600 5600 12600 6700
+Connection ~ 12600 6700
+Wire Wire Line
+	12600 6700 13000 6700
+Wire Wire Line
+	13000 5600 13000 6700
+Connection ~ 13000 6700
+Wire Wire Line
+	13000 6700 13400 6700
+Wire Wire Line
+	9900 6700 8650 6700
+Wire Wire Line
+	5650 6700 5650 5450
+Connection ~ 9900 6700
+Wire Wire Line
+	5650 6800 5650 6700
+Connection ~ 5650 6700
+Wire Wire Line
+	7950 5900 7750 5900
+Wire Wire Line
+	7400 5900 7400 6000
+Wire Wire Line
+	7400 5900 7400 5550
+Wire Wire Line
+	7400 5550 7550 5550
+Connection ~ 7400 5900
+Wire Wire Line
+	7750 6000 7750 5900
+Connection ~ 7750 5900
+Wire Wire Line
+	7750 5900 7400 5900
+Wire Wire Line
+	7750 6300 7750 6700
+Connection ~ 7750 6700
+Wire Wire Line
+	7750 6700 7400 6700
+Wire Wire Line
+	7400 6300 7400 6700
+Connection ~ 7400 6700
+Wire Wire Line
+	7400 6700 6950 6700
+Wire Wire Line
+	8250 5900 8900 5900
+Wire Wire Line
+	10000 6200 10000 6050
+Wire Wire Line
+	10000 6500 10000 6700
+Wire Wire Line
+	9700 5950 9700 6000
+Wire Wire Line
+	9700 6000 9800 6000
+Connection ~ 9900 6000
+Wire Wire Line
+	9900 6000 9900 6700
+Wire Wire Line
+	9800 6000 9800 5950
+Connection ~ 9800 6000
+Wire Wire Line
+	9800 6000 9900 6000
+Wire Wire Line
+	10000 6050 8950 6050
+Wire Wire Line
+	8950 6050 8950 5400
+Wire Wire Line
+	8950 5400 8600 5400
+Connection ~ 10000 6050
+Wire Wire Line
+	10000 6050 10000 5950
+Wire Wire Line
+	8600 5550 8650 5550
+Wire Wire Line
+	8650 5550 8650 6700
+Connection ~ 8650 6700
+Wire Wire Line
+	8650 6700 7750 6700
+Wire Wire Line
+	8600 4950 8800 4950
+Wire Wire Line
+	9100 4950 9300 4950
+Connection ~ 9300 5250
+Wire Wire Line
+	9300 5250 9550 5250
+Wire Wire Line
+	10000 5100 10000 5150
+Wire Wire Line
+	10000 5150 8650 5150
+Wire Wire Line
+	8650 5150 8650 5100
+Wire Wire Line
+	8650 5100 8600 5100
+Wire Wire Line
+	7550 4950 7400 4950
+Wire Wire Line
+	7400 4950 7400 4300
+Connection ~ 7400 4300
+Wire Wire Line
+	7400 4300 9700 4300
+Wire Wire Line
+	6000 5000 6000 4300
+Connection ~ 6000 4300
+Wire Wire Line
+	6000 4300 7400 4300
+Wire Wire Line
+	5650 5000 5650 4300
+Connection ~ 5650 4300
+Wire Wire Line
+	5650 4300 6000 4300
+Wire Wire Line
+	7550 5400 6950 5400
+Wire Wire Line
+	6950 5400 6950 6000
+Wire Wire Line
+	6950 6300 6950 6700
+Connection ~ 6950 6700
+Text HLabel 7300 5250 0    50   Input ~ 0
+EN
+Text HLabel 7300 5100 0    50   Input ~ 0
+Pgood
+Wire Wire Line
+	7300 5100 7550 5100
+Wire Wire Line
+	6000 5300 6000 5450
+Wire Wire Line
+	6000 5450 5650 5450
+Connection ~ 5650 5450
+Wire Wire Line
+	5650 5450 5650 5300
+Wire Wire Line
+	15250 5250 14350 5250
+Connection ~ 13400 5250
+Wire Wire Line
+	11850 5250 12150 5250
+Text HLabel 15300 6100 2    50   Input ~ 0
+3V3-RS
+$Comp
+L Device:R R?
+U 1 1 5B818EC1
+P 13900 5700
+AR Path="/5B808B29/5B818EC1" Ref="R?"  Part="1" 
+AR Path="/5B7EFFE7/5B818EC1" Ref="R?"  Part="1" 
+AR Path="/5B80DE5C/5B818EC1" Ref="R115"  Part="1" 
+F 0 "R115" H 13970 5746 50  0000 L CNN
+F 1 "10K" H 13970 5655 50  0000 L CNN
+F 2 "AEvan:0805_R" V 13830 5700 50  0001 C CNN
+F 3 "~" H 13900 5700 50  0001 C CNN
+	1    13900 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13900 5850 13900 6100
+Connection ~ 13900 6100
+Wire Wire Line
+	13900 6100 14350 6100
+Wire Wire Line
+	13900 5250 13900 5550
+Connection ~ 13900 5250
+Wire Wire Line
+	13900 5250 13400 5250
+$Comp
+L Device:R R?
+U 1 1 5B830493
+P 15000 6100
+AR Path="/5B808B29/5B830493" Ref="R?"  Part="1" 
+AR Path="/5B7EFFE7/5B830493" Ref="R?"  Part="1" 
+AR Path="/5B80DE5C/5B830493" Ref="R117"  Part="1" 
+F 0 "R117" V 14793 6100 50  0000 C CNN
+F 1 "1k" V 14884 6100 50  0000 C CNN
+F 2 "AEvan:0805_R" V 14930 6100 50  0001 C CNN
+F 3 "~" H 15000 6100 50  0001 C CNN
+	1    15000 6100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	15150 6100 15300 6100
+$Comp
+L Device:C C?
+U 1 1 5B844F33
+P 14350 5450
+AR Path="/5B808B29/5B844F33" Ref="C?"  Part="1" 
+AR Path="/5B7EFFE7/5B844F33" Ref="C?"  Part="1" 
+AR Path="/5B80DE5C/5B844F33" Ref="C129"  Part="1" 
+F 0 "C129" H 14465 5496 50  0000 L CNN
+F 1 "10uF" H 14465 5405 50  0000 L CNN
+F 2 "AEvan:0805_C" H 14388 5300 50  0001 C CNN
+F 3 "~" H 14350 5450 50  0001 C CNN
+	1    14350 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5B844FF7
+P 14350 5850
+AR Path="/5B808B29/5B844FF7" Ref="R?"  Part="1" 
+AR Path="/5B7EFFE7/5B844FF7" Ref="R?"  Part="1" 
+AR Path="/5B80DE5C/5B844FF7" Ref="R116"  Part="1" 
+F 0 "R116" H 14420 5896 50  0000 L CNN
+F 1 "10" H 14420 5805 50  0000 L CNN
+F 2 "AEvan:0805_R" V 14280 5850 50  0001 C CNN
+F 3 "~" H 14350 5850 50  0001 C CNN
+	1    14350 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14350 6000 14350 6100
+Connection ~ 14350 6100
+Wire Wire Line
+	14350 6100 14850 6100
+Wire Wire Line
+	14350 5700 14350 5600
+Wire Wire Line
+	14350 5300 14350 5250
+Connection ~ 14350 5250
+Wire Wire Line
+	14350 5250 13900 5250
+$Comp
+L Mechanical:Heatsink_Pad HS107
+U 1 1 5BA8C6AC
+P 10000 4150
+F 0 "HS107" H 10141 4191 50  0000 L CNN
+F 1 "Heatsink_Pad" H 10141 4100 50  0000 L CNN
+F 2 "AEvan:5X6-HEATSINK" H 10012 4100 50  0001 C CNN
+F 3 "~" H 10012 4100 50  0001 C CNN
+	1    10000 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Heatsink_Pad HS106
+U 1 1 5BA8C750
+P 9550 3900
+F 0 "HS106" H 9691 3941 50  0000 L CNN
+F 1 "Heatsink_Pad" H 9691 3850 50  0000 L CNN
+F 2 "AEvan:5X6-HEATSINK" H 9562 3850 50  0001 C CNN
+F 3 "~" H 9562 3850 50  0001 C CNN
+	1    9550 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 4000 9550 4050
+Connection ~ 9550 5250
+Wire Wire Line
+	9550 5250 9700 5250
+Wire Wire Line
+	10000 4250 10000 4300
+Connection ~ 10000 4300
+Wire Wire Line
+	8900 5900 8900 6100
+$Comp
+L 0002-ATX-rescue:BSC026N08NS5ATMA1-transistors Q?
+U 1 1 5C068D62
+P 10400 5650
+AR Path="/5B808B29/5C068D62" Ref="Q?"  Part="1" 
+AR Path="/5B7EFFE7/5C068D62" Ref="Q?"  Part="1" 
+AR Path="/5B80DE5C/5C068D62" Ref="Q108"  Part="1" 
+F 0 "Q108" V 10446 5420 50  0000 R CNN
+F 1 "BSC026N08NS5ATMA1" V 10355 5420 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:TDSON-8-1" H 10400 5850 50  0001 C CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BSC026N08NS5-DS-v02_01-EN.pdf?fileId=5546d4624ad04ef9014ae2eace7629e0" V 10400 5650 50  0001 L CNN
+	1    10400 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 0002-ATX-rescue:BSC026N08NS5ATMA1-transistors Q?
+U 1 1 5C068DBC
+P 10400 4800
+AR Path="/5B808B29/5C068DBC" Ref="Q?"  Part="1" 
+AR Path="/5B7EFFE7/5C068DBC" Ref="Q?"  Part="1" 
+AR Path="/5B80DE5C/5C068DBC" Ref="Q107"  Part="1" 
+F 0 "Q107" V 10446 4570 50  0000 R CNN
+F 1 "BSC026N08NS5ATMA1" V 10355 4570 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:TDSON-8-1" H 10400 5000 50  0001 C CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BSC026N08NS5-DS-v02_01-EN.pdf?fileId=5546d4624ad04ef9014ae2eace7629e0" V 10400 4800 50  0001 L CNN
+	1    10400 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10000 5250 10200 5250
+Connection ~ 10000 5250
+Wire Wire Line
+	8900 6100 13900 6100
+Wire Wire Line
+	10000 6700 11300 6700
+Connection ~ 10000 6700
+Wire Wire Line
+	10500 4500 10500 4300
+Wire Wire Line
+	10500 4300 10400 4300
+Wire Wire Line
+	10200 4500 10200 4300
+Connection ~ 10200 4300
+Wire Wire Line
+	10200 4300 10000 4300
+Wire Wire Line
+	10300 4500 10300 4300
+Connection ~ 10300 4300
+Wire Wire Line
+	10300 4300 10200 4300
+Wire Wire Line
+	10400 4500 10400 4300
+Connection ~ 10400 4300
+Wire Wire Line
+	10400 4300 10300 4300
+Wire Wire Line
+	10500 5100 10500 5150
+Wire Wire Line
+	10500 5150 10000 5150
+Connection ~ 10000 5150
+Wire Wire Line
+	10200 5100 10200 5250
+Connection ~ 10200 5250
+Wire Wire Line
+	10200 5250 10300 5250
+Wire Wire Line
+	10200 5350 10200 5250
+Wire Wire Line
+	10300 5350 10300 5250
+Connection ~ 10300 5250
+Wire Wire Line
+	10300 5250 10400 5250
+Wire Wire Line
+	10400 5350 10400 5250
+Connection ~ 10400 5250
+Wire Wire Line
+	10400 5250 10500 5250
+Wire Wire Line
+	10500 5350 10500 5250
+Connection ~ 10500 5250
+Wire Wire Line
+	10500 5250 11300 5250
+Wire Wire Line
+	10300 5100 10300 5250
+Wire Wire Line
+	10400 5100 10400 5250
+Wire Wire Line
+	10200 5950 10200 6000
+Wire Wire Line
+	10200 6000 9900 6000
+Wire Wire Line
+	10400 5950 10400 6000
+Wire Wire Line
+	10400 6000 10300 6000
+Connection ~ 10200 6000
+Wire Wire Line
+	10300 5950 10300 6000
+Connection ~ 10300 6000
+Wire Wire Line
+	10300 6000 10200 6000
+Wire Wire Line
+	10000 6050 10500 6050
+Wire Wire Line
+	10500 6050 10500 5950
+$Comp
+L Mechanical:Heatsink_Pad HS108
+U 1 1 5C0003D3
+P 10500 4150
+F 0 "HS108" H 10641 4191 50  0000 L CNN
+F 1 "Heatsink_Pad" H 10641 4100 50  0000 L CNN
+F 2 "AEvan:5X6-HEATSINK" H 10512 4100 50  0001 C CNN
+F 3 "~" H 10512 4100 50  0001 C CNN
+	1    10500 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Heatsink_Pad HS105
+U 1 1 5C00042B
+P 9250 3900
+F 0 "HS105" H 9391 3941 50  0000 L CNN
+F 1 "Heatsink_Pad" H 9391 3850 50  0000 L CNN
+F 2 "AEvan:5X6-HEATSINK" H 9262 3850 50  0001 C CNN
+F 3 "~" H 9262 3850 50  0001 C CNN
+	1    9250 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 4000 9250 4050
+Wire Wire Line
+	9250 4050 9550 4050
+Connection ~ 9550 4050
+Wire Wire Line
+	9550 4050 9550 5250
+Wire Wire Line
+	10500 4250 10500 4300
+Connection ~ 10500 4300
+Wire Wire Line
+	5650 6700 6950 6700
+Wire Wire Line
+	7300 5250 7550 5250
+$Comp
+L Device:R R?
+U 1 1 60339329
+P 9300 5100
+AR Path="/5B808B29/60339329" Ref="R?"  Part="1" 
+AR Path="/5B7EFFE7/60339329" Ref="R?"  Part="1" 
+AR Path="/5B80DE5C/60339329" Ref="R5"  Part="1" 
+F 0 "R5" H 9370 5146 50  0000 L CNN
+F 1 "5.01" H 9370 5055 50  0000 L CNN
+F 2 "AEvan:0805_R" V 9230 5100 50  0001 C CNN
+F 3 "~" H 9300 5100 50  0001 C CNN
+	1    9300 5100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
