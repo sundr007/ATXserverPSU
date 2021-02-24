@@ -10,4 +10,4 @@ The biggest benefit of this system is that the server power supplies will provid
 The circuit boards are done in KiCAD.
 The mechanicals are done in OpenSCAD.
 
-![](ATXs.png?raw=true)
+![](OpenSCAD_ATXs.png?raw=true)
