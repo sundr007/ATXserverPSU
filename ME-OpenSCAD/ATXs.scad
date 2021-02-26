@@ -1,6 +1,14 @@
 include </home/evan/github/lasercut/lasercut.scad>; 
 
 
+
+module ATX_PCB(){
+import("/home/evan/github/ATXserverPSU/ME-OpenSCAD/PCBATX.stl");
+}
+module PSU_PCB(){
+import("/home/evan/github/ATXserverPSU/ME-OpenSCAD/PCBPSU.stl");
+}
+
 $fn=60;
 // ##### RENDERING OPTIONS #####
 
@@ -11,7 +19,7 @@ render_pcbATX   = false;
 
 // Part Seperation
 Sep=10-10*$t;
-Sep=0;
+Sep=0.1;
 
 thickness = 3;
 
@@ -22,7 +30,7 @@ W = 150;
 Hpsu=41.5;
 Lpsu=165;
 Wpsu=80;
-ATXgap=10;
+ATXgap=15;
 Backgap=20;
 
 H = Wpsu+thickness*1;
@@ -46,17 +54,25 @@ Xseperator2 = Xindent+(Hpsu+thickness)*2;
 PCB_Thickness = 1.575;
 Watx = Ybacksq -10;
 Hatx = H-6; 
+PCB_Thick=10;
 
 
 
 module pcbATX(){
-    cube([Watx,Hatx,PCB_Thickness]);    
+    //cube([Watx,Hatx,PCB_Thickness]);
+ATX_PCB();    
 }
 module pcbATX3d(){
-    translate([Xindent+Wback-thickness+3*Sep-thickness,L-thickness*2-Watx,thickness+1.5])
+    translate([Xindent+Wback-thickness+3*Sep-thickness,L-(L-Lpsu)-Watx+PCB_Thick,thickness+1.5])
     rotate([90,0,0])
     rotate([0,90,0])
     pcbATX();
+}
+
+module pcbPSU3d(){
+    translate([-Hatx-ATXgap+2,L-(L-Lpsu)-Watx+PCB_Thick+Watx,Hatx+56.5])
+    rotate([90,0,0])
+    PSU_PCB();
 }
 
 module pcbATX2d(){
@@ -79,9 +95,10 @@ module 3d() {
     Sep23d();
     Top3d();
     Bottom3d();
-    Back3d();
-    Left3d();
-    //pcbATX3d();
+   // Back3d();
+    //Left3d();
+    pcbATX3d();
+    pcbPSU3d();
 }
 
 // ================================================

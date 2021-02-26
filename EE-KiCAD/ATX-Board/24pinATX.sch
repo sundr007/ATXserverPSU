@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
-Sheet 4 9
+Sheet 4 8
 Title ""
 Date ""
 Rev ""
@@ -19,7 +19,7 @@ U 1 1 5B6B981A
 P 8550 4350
 F 0 "J118" H 8600 4767 50  0000 C CNN
 F 1 "Conn_02x05_Top_Bottom" H 8600 4676 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-10A_2x05_P4.20mm_Vertical" H 8550 4350 50  0001 C CNN
+F 2 "ATXs:Molex_Mini-Fit_Jr_5566-10A_2x05_P4.20mm_Vertical" H 8550 4350 50  0001 C CNN
 F 3 "~" H 8550 4350 50  0001 C CNN
 	1    8550 4350
 	1    0    0    -1  
@@ -30,7 +30,7 @@ U 1 1 5B6B9893
 P 8550 5600
 F 0 "J119" H 8600 6217 50  0000 C CNN
 F 1 "Conn_02x09_Top_Bottom" H 8600 6126 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-18A_2x09_P4.20mm_Vertical" H 8550 5600 50  0001 C CNN
+F 2 "ATXs:Molex_Mini-Fit_Jr_5566-18A_2x09_P4.20mm_Vertical" H 8550 5600 50  0001 C CNN
 F 3 "~" H 8550 5600 50  0001 C CNN
 	1    8550 5600
 	1    0    0    -1  

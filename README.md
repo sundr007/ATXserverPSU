@@ -1,6 +1,8 @@
 # ATXserverPSU
 ![](ATXs.png?raw=true)
 
+![](ATXsWhite.png?raw=true)
+
 ATX computer power supply utilizing redundant server power supplies for mining applications.
 The Server power supplies will converter AC to 12Vdc with high efficiency.
 The ATXs box will then take that 12V, create 5V and 3.3V, supply the needed logic and then provide a modular ATX connector set to connect to the mother board, graphics cards, etc.

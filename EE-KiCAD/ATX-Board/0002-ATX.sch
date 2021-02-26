@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
-Sheet 1 9
+Sheet 1 8
 Title "CRPS to ATX"
 Date "2018-08-03"
 Rev "0000"
@@ -171,15 +171,15 @@ Wire Wire Line
 Wire Wire Line
 	5700 2200 5800 2200
 $Sheet
-S 5100 3750 550  450 
+S 5100 5100 550  450 
 U 5B7EFFE7
 F0 "5V" 50
 F1 "5V.sch" 50
-F2 "12V" I L 5100 3900 50 
-F3 "5V" I R 5650 3900 50 
-F4 "EN" I L 5100 4050 50 
-F5 "Pgood" I R 5650 4050 50 
-F6 "FB" I R 5650 3800 50 
+F2 "12V" I L 5100 5250 50 
+F3 "5V" I R 5650 5250 50 
+F4 "EN" I L 5100 5400 50 
+F5 "Pgood" I R 5650 5400 50 
+F6 "FB" I R 5650 5150 50 
 $EndSheet
 Text Notes 6900 3500 2    157  ~ 0
 5V Buck Converter
@@ -416,145 +416,6 @@ Wire Notes Line
 Wire Notes Line
 	12350 7200 12350 8400
 Wire Wire Line
-	9150 7750 10750 7750
-Text GLabel 9300 8600 2    50   Input ~ 0
-PWOK
-Text GLabel 9300 8400 2    50   Input ~ 0
-PSON
-Wire Wire Line
-	9300 8600 9150 8600
-$Comp
-L 0002-ATX-rescue:Conn_01x03-conn J105
-U 1 1 5C0B42BD
-P 8950 7650
-F 0 "J105" H 8870 7967 50  0000 C CNN
-F 1 "Conn_01x03" H 8870 7876 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 8950 7650 50  0001 C CNN
-F 3 "~" H 8950 7650 50  0001 C CNN
-	1    8950 7650
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	9150 7550 9900 7550
-Wire Wire Line
-	9900 7550 9900 7650
-Wire Wire Line
-	9900 7650 10750 7650
-Wire Wire Line
-	9150 7650 9250 7650
-Wire Wire Line
-	9150 8500 9250 8500
-Wire Wire Line
-	9150 8400 9300 8400
-$Comp
-L 0002-ATX-rescue:Screw_Terminal_01x01-conn J103
-U 1 1 5C1397D2
-P 6750 9400
-F 0 "J103" H 6830 9442 50  0000 L CNN
-F 1 "Screw_Terminal_01x01" H 6830 9351 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_5.3mm_M5_Pad_Via" H 6750 9400 50  0001 C CNN
-F 3 "~" H 6750 9400 50  0001 C CNN
-	1    6750 9400
-	1    0    0    -1  
-$EndComp
-$Comp
-L 0002-ATX-rescue:Screw_Terminal_01x01-conn J102
-U 1 1 5C1399F0
-P 6750 9250
-F 0 "J102" H 6830 9292 50  0000 L CNN
-F 1 "Screw_Terminal_01x01" H 6830 9201 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_5.3mm_M5_Pad_Via" H 6750 9250 50  0001 C CNN
-F 3 "~" H 6750 9250 50  0001 C CNN
-	1    6750 9250
-	1    0    0    -1  
-$EndComp
-$Comp
-L 0002-ATX-rescue:Screw_Terminal_01x01-conn J104
-U 1 1 5C139A56
-P 6750 9550
-F 0 "J104" H 6830 9592 50  0000 L CNN
-F 1 "Screw_Terminal_01x01" H 6830 9501 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_5.3mm_M5_Pad_Via" H 6750 9550 50  0001 C CNN
-F 3 "~" H 6750 9550 50  0001 C CNN
-	1    6750 9550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0104
-U 1 1 5C139AF2
-P 6400 9650
-F 0 "#PWR0104" H 6400 9400 50  0001 C CNN
-F 1 "GND" H 6400 9500 50  0000 C CNN
-F 2 "" H 6400 9650 50  0001 C CNN
-F 3 "" H 6400 9650 50  0001 C CNN
-	1    6400 9650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6400 9650 6400 9550
-Wire Wire Line
-	6400 9400 6550 9400
-Wire Wire Line
-	6550 9550 6400 9550
-Text GLabel 6350 9250 0    50   Input ~ 0
-Vmain
-Wire Wire Line
-	6350 9250 6450 9250
-$Comp
-L 0002-ATX-rescue:Conn_01x04-conn J106
-U 1 1 5C18139B
-P 8950 8400
-F 0 "J106" H 8870 8717 50  0000 C CNN
-F 1 "Conn_01x04" H 8870 8626 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 8950 8400 50  0001 C CNN
-F 3 "~" H 8950 8400 50  0001 C CNN
-	1    8950 8400
-	-1   0    0    -1  
-$EndComp
-Text GLabel 9300 8300 2    50   Input ~ 0
-Vstby
-$Comp
-L power:GND #PWR0105
-U 1 1 5C189AAE
-P 9550 7950
-F 0 "#PWR0105" H 9550 7700 50  0001 C CNN
-F 1 "GND" H 9550 7800 50  0000 C CNN
-F 2 "" H 9550 7950 50  0001 C CNN
-F 3 "" H 9550 7950 50  0001 C CNN
-	1    9550 7950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9250 7650 9250 8500
-Wire Wire Line
-	9550 7950 9550 7650
-Wire Wire Line
-	9550 7650 9250 7650
-Connection ~ 9250 7650
-Wire Wire Line
-	9300 8300 9150 8300
-Wire Wire Line
-	6400 9400 6400 9550
-Connection ~ 6400 9550
-$Comp
-L 0002-ATX-rescue:Screw_Terminal_01x01-conn J101
-U 1 1 5C1CBC34
-P 6750 9100
-F 0 "J101" H 6830 9142 50  0000 L CNN
-F 1 "Screw_Terminal_01x01" H 6830 9051 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_5.3mm_M5_Pad_Via" H 6750 9100 50  0001 C CNN
-F 3 "~" H 6750 9100 50  0001 C CNN
-	1    6750 9100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6550 9100 6450 9100
-Wire Wire Line
-	6450 9100 6450 9250
-Connection ~ 6450 9250
-Wire Wire Line
-	6450 9250 6550 9250
-Wire Wire Line
 	5050 3900 5100 3900
 Text GLabel 4150 3500 0    50   Input ~ 0
 5Vsb
@@ -736,15 +597,15 @@ Wire Wire Line
 Wire Wire Line
 	7900 5150 7950 5150
 $Sheet
-S 5100 5100 550  450 
+S 5100 3750 550  450 
 U 603813BC
 F0 "sheet603813B5" 50
 F1 "5V.sch" 50
-F2 "12V" I L 5100 5250 50 
-F3 "5V" I R 5650 5250 50 
-F4 "EN" I L 5100 5400 50 
-F5 "Pgood" I R 5650 5400 50 
-F6 "FB" I R 5650 5150 50 
+F2 "12V" I L 5100 3900 50 
+F3 "5V" I R 5650 3900 50 
+F4 "EN" I L 5100 4050 50 
+F5 "Pgood" I R 5650 4050 50 
+F6 "FB" I R 5650 3800 50 
 $EndSheet
 Text GLabel 5950 5250 2    50   Input ~ 0
 3V3
@@ -765,4 +626,203 @@ Text GLabel 8300 4450 2    50   Input ~ 0
 Wire Wire Line
 	8300 4450 8250 4450
 Connection ~ 8250 4450
+Text GLabel 2200 2800 2    50   Input ~ 0
+Vmain
+$Comp
+L power:GND #PWR0104
+U 1 1 5C139AF2
+P 2300 5250
+F 0 "#PWR0104" H 2300 5000 50  0001 C CNN
+F 1 "GND" H 2300 5100 50  0000 C CNN
+F 2 "" H 2300 5250 50  0001 C CNN
+F 3 "" H 2300 5250 50  0001 C CNN
+	1    2300 5250
+	1    0    0    -1  
+$EndComp
+Text GLabel 1900 5400 2    50   Input ~ 0
+PWOK
+Text GLabel 1900 5300 2    50   Input ~ 0
+PSON
+Text GLabel 1900 2700 2    50   Input ~ 0
+Vstby
+Text GLabel 1400 5400 0    50   Input ~ 0
+SCL
+Text GLabel 1400 5300 0    50   Input ~ 0
+SDA
+$Comp
+L power:GND #PWR0105
+U 1 1 603DE25B
+P 950 5250
+F 0 "#PWR0105" H 950 5000 50  0001 C CNN
+F 1 "GND" H 950 5100 50  0000 C CNN
+F 2 "" H 950 5250 50  0001 C CNN
+F 3 "" H 950 5250 50  0001 C CNN
+	1    950  5250
+	1    0    0    -1  
+$EndComp
+Text GLabel 1000 2800 0    50   Input ~ 0
+Vmain
+Wire Wire Line
+	950  5250 950  5200
+Wire Wire Line
+	1400 5200 950  5200
+Wire Wire Line
+	1900 5200 2300 5200
+Wire Wire Line
+	2300 5200 2300 5250
+Wire Wire Line
+	1000 2800 1400 2800
+Connection ~ 1400 2800
+Wire Wire Line
+	2200 2800 1900 2800
+Wire Wire Line
+	1400 2800 1400 2700
+Wire Wire Line
+	1900 2800 1900 2900
+Wire Wire Line
+	1400 2800 1400 2900
+Wire Wire Line
+	1400 5100 1400 5200
+Wire Wire Line
+	1900 5100 1900 5200
+Connection ~ 1900 5200
+Connection ~ 1400 5200
+Connection ~ 1900 2800
+$Comp
+L Connector_Generic:Conn_02x28_Odd_Even J200
+U 1 1 6047C5DA
+P 1600 4000
+F 0 "J200" H 1650 5517 50  0000 C CNN
+F 1 "Conn_02x28_Odd_Even" H 1650 5426 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x28_P2.54mm_Vertical" H 1600 4000 50  0001 C CNN
+F 3 "~" H 1600 4000 50  0001 C CNN
+	1    1600 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 2900 1400 3000
+Connection ~ 1400 2900
+Connection ~ 1400 3000
+Wire Wire Line
+	1400 3000 1400 3100
+Connection ~ 1400 3100
+Wire Wire Line
+	1400 3100 1400 3200
+Connection ~ 1400 3200
+Wire Wire Line
+	1400 3200 1400 3300
+Connection ~ 1400 3300
+Wire Wire Line
+	1400 3300 1400 3400
+Connection ~ 1400 3400
+Wire Wire Line
+	1400 3400 1400 3500
+Connection ~ 1400 3500
+Wire Wire Line
+	1400 3500 1400 3600
+Connection ~ 1400 3600
+Wire Wire Line
+	1400 3600 1400 3700
+Connection ~ 1400 3700
+Wire Wire Line
+	1400 3700 1400 3800
+Connection ~ 1400 3800
+Wire Wire Line
+	1400 3800 1400 3900
+Connection ~ 1400 3900
+Wire Wire Line
+	1400 3900 1400 4000
+Wire Wire Line
+	1400 4100 1400 4200
+Connection ~ 1400 5100
+Connection ~ 1400 4200
+Wire Wire Line
+	1400 4200 1400 4300
+Connection ~ 1400 4300
+Wire Wire Line
+	1400 4300 1400 4400
+Connection ~ 1400 4400
+Wire Wire Line
+	1400 4400 1400 4500
+Connection ~ 1400 4500
+Wire Wire Line
+	1400 4500 1400 4600
+Connection ~ 1400 4600
+Wire Wire Line
+	1400 4600 1400 4700
+Connection ~ 1400 4700
+Wire Wire Line
+	1400 4700 1400 4800
+Connection ~ 1400 4800
+Wire Wire Line
+	1400 4800 1400 4900
+Connection ~ 1400 4900
+Wire Wire Line
+	1400 4900 1400 5000
+Connection ~ 1400 5000
+Wire Wire Line
+	1400 5000 1400 5100
+Wire Wire Line
+	1900 4100 1900 4200
+Connection ~ 1900 5100
+Connection ~ 1900 4200
+Wire Wire Line
+	1900 4200 1900 4300
+Connection ~ 1900 4300
+Wire Wire Line
+	1900 4300 1900 4400
+Connection ~ 1900 4400
+Wire Wire Line
+	1900 4400 1900 4500
+Connection ~ 1900 4500
+Wire Wire Line
+	1900 4500 1900 4600
+Connection ~ 1900 4600
+Wire Wire Line
+	1900 4600 1900 4700
+Connection ~ 1900 4700
+Wire Wire Line
+	1900 4700 1900 4800
+Connection ~ 1900 4800
+Wire Wire Line
+	1900 4800 1900 4900
+Connection ~ 1900 4900
+Wire Wire Line
+	1900 4900 1900 5000
+Connection ~ 1900 5000
+Wire Wire Line
+	1900 5000 1900 5100
+Connection ~ 1900 2900
+Connection ~ 1900 3000
+Wire Wire Line
+	1900 3000 1900 2900
+Connection ~ 1900 3100
+Wire Wire Line
+	1900 3100 1900 3000
+Connection ~ 1900 3200
+Wire Wire Line
+	1900 3200 1900 3100
+Connection ~ 1900 3300
+Wire Wire Line
+	1900 3300 1900 3200
+Connection ~ 1900 3400
+Wire Wire Line
+	1900 3400 1900 3300
+Connection ~ 1900 3500
+Wire Wire Line
+	1900 3500 1900 3400
+Connection ~ 1900 3600
+Wire Wire Line
+	1900 3600 1900 3500
+Connection ~ 1900 3700
+Wire Wire Line
+	1900 3700 1900 3600
+Connection ~ 1900 3800
+Wire Wire Line
+	1900 3800 1900 3700
+Connection ~ 1900 3900
+Wire Wire Line
+	1900 3900 1900 3800
+Wire Wire Line
+	1900 3900 1900 4000
 $EndSCHEMATC

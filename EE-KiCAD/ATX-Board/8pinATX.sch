@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
-Sheet 2 9
+Sheet 2 8
 Title ""
 Date "2018-08-03"
 Rev ""
@@ -19,76 +19,10 @@ U 1 1 5B6927B4
 P 7900 2900
 F 0 "J107" H 7950 3217 50  0000 C CNN
 F 1 "Conn_02x04_Top_Bottom" H 7950 3126 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-08A_2x04_P4.20mm_Vertical" H 7900 2900 50  0001 C CNN
+F 2 "ATXs:Molex_Mini-Fit_Jr_5566-08A_2x04_P4.20mm_Vertical" H 7900 2900 50  0001 C CNN
 F 3 "~" H 7900 2900 50  0001 C CNN
 	1    7900 2900
 	1    0    0    -1  
-$EndComp
-$Comp
-L 0002-ATX-rescue:Conn_02x04_Top_Bottom-conn J108
-U 1 1 5B6928E4
-P 7900 3650
-F 0 "J108" H 7950 3967 50  0000 C CNN
-F 1 "Conn_02x04_Top_Bottom" H 7950 3876 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-08A_2x04_P4.20mm_Vertical" H 7900 3650 50  0001 C CNN
-F 3 "~" H 7900 3650 50  0001 C CNN
-	1    7900 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L 0002-ATX-rescue:Conn_02x04_Top_Bottom-conn J109
-U 1 1 5B692982
-P 7900 4400
-F 0 "J109" H 7950 4717 50  0000 C CNN
-F 1 "Conn_02x04_Top_Bottom" H 7950 4626 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-08A_2x04_P4.20mm_Vertical" H 7900 4400 50  0001 C CNN
-F 3 "~" H 7900 4400 50  0001 C CNN
-	1    7900 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L 0002-ATX-rescue:Conn_02x04_Top_Bottom-conn J110
-U 1 1 5B6929BA
-P 7900 5200
-F 0 "J110" H 7950 5517 50  0000 C CNN
-F 1 "Conn_02x04_Top_Bottom" H 7950 5426 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-08A_2x04_P4.20mm_Vertical" H 7900 5200 50  0001 C CNN
-F 3 "~" H 7900 5200 50  0001 C CNN
-	1    7900 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L 0002-ATX-rescue:Conn_02x04_Top_Bottom-conn J111
-U 1 1 5B692A02
-P 7900 6000
-F 0 "J111" H 7950 6317 50  0000 C CNN
-F 1 "Conn_02x04_Top_Bottom" H 7950 6226 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-08A_2x04_P4.20mm_Vertical" H 7900 6000 50  0001 C CNN
-F 3 "~" H 7900 6000 50  0001 C CNN
-	1    7900 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L 0002-ATX-rescue:Conn_02x04_Top_Bottom-conn J112
-U 1 1 5B692A40
-P 7900 6800
-F 0 "J112" H 7950 7117 50  0000 C CNN
-F 1 "Conn_02x04_Top_Bottom" H 7950 7026 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-08A_2x04_P4.20mm_Vertical" H 7900 6800 50  0001 C CNN
-F 3 "~" H 7900 6800 50  0001 C CNN
-	1    7900 6800
-	1    0    0    -1  
-$EndComp
-$Comp
-L 0002-ATX-rescue:Conn_02x04_Top_Bottom-conn J113
-U 1 1 5B692A8A
-P 7900 7600
-F 0 "J113" H 7950 7917 50  0000 C CNN
-F 1 "Conn_02x04_Top_Bottom" H 7950 7826 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-08A_2x04_P4.20mm_Vertical" H 7900 7600 50  0001 C CNN
-F 3 "~" H 7900 7600 50  0001 C CNN
-	1    7900 7600
-	1    0    0    1   
 $EndComp
 Wire Wire Line
 	8500 2800 8200 2800
@@ -413,4 +347,70 @@ Wire Wire Line
 Wire Wire Line
 	7600 7400 7700 7400
 Connection ~ 7600 7500
+$Comp
+L 0002-ATX-rescue:Conn_02x04_Top_Bottom-conn J113
+U 1 1 5B692A8A
+P 7900 7600
+F 0 "J113" H 7950 7917 50  0000 C CNN
+F 1 "Conn_02x04_Top_Bottom" H 7950 7826 50  0000 C CNN
+F 2 "ATXs:Molex_Mini-Fit_Jr_5566-08A_2x04_P4.20mm_Vertical" H 7900 7600 50  0001 C CNN
+F 3 "~" H 7900 7600 50  0001 C CNN
+	1    7900 7600
+	1    0    0    1   
+$EndComp
+$Comp
+L 0002-ATX-rescue:Conn_02x04_Top_Bottom-conn J112
+U 1 1 5B692A40
+P 7900 6800
+F 0 "J112" H 7950 7117 50  0000 C CNN
+F 1 "Conn_02x04_Top_Bottom" H 7950 7026 50  0000 C CNN
+F 2 "ATXs:Molex_Mini-Fit_Jr_5566-08A_2x04_P4.20mm_Vertical" H 7900 6800 50  0001 C CNN
+F 3 "~" H 7900 6800 50  0001 C CNN
+	1    7900 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0002-ATX-rescue:Conn_02x04_Top_Bottom-conn J111
+U 1 1 5B692A02
+P 7900 6000
+F 0 "J111" H 7950 6317 50  0000 C CNN
+F 1 "Conn_02x04_Top_Bottom" H 7950 6226 50  0000 C CNN
+F 2 "ATXs:Molex_Mini-Fit_Jr_5566-08A_2x04_P4.20mm_Vertical" H 7900 6000 50  0001 C CNN
+F 3 "~" H 7900 6000 50  0001 C CNN
+	1    7900 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0002-ATX-rescue:Conn_02x04_Top_Bottom-conn J110
+U 1 1 5B6929BA
+P 7900 5200
+F 0 "J110" H 7950 5517 50  0000 C CNN
+F 1 "Conn_02x04_Top_Bottom" H 7950 5426 50  0000 C CNN
+F 2 "ATXs:Molex_Mini-Fit_Jr_5566-08A_2x04_P4.20mm_Vertical" H 7900 5200 50  0001 C CNN
+F 3 "~" H 7900 5200 50  0001 C CNN
+	1    7900 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0002-ATX-rescue:Conn_02x04_Top_Bottom-conn J109
+U 1 1 5B692982
+P 7900 4400
+F 0 "J109" H 7950 4717 50  0000 C CNN
+F 1 "Conn_02x04_Top_Bottom" H 7950 4626 50  0000 C CNN
+F 2 "ATXs:Molex_Mini-Fit_Jr_5566-08A_2x04_P4.20mm_Vertical" H 7900 4400 50  0001 C CNN
+F 3 "~" H 7900 4400 50  0001 C CNN
+	1    7900 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0002-ATX-rescue:Conn_02x04_Top_Bottom-conn J108
+U 1 1 5B6928E4
+P 7900 3650
+F 0 "J108" H 7950 3967 50  0000 C CNN
+F 1 "Conn_02x04_Top_Bottom" H 7950 3876 50  0000 C CNN
+F 2 "ATXs:Molex_Mini-Fit_Jr_5566-08A_2x04_P4.20mm_Vertical" H 7900 3650 50  0001 C CNN
+F 3 "~" H 7900 3650 50  0001 C CNN
+	1    7900 3650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
-Sheet 3 9
+Sheet 3 8
 Title ""
 Date ""
 Rev ""
@@ -19,7 +19,7 @@ U 1 1 5B6B19A1
 P 8200 3900
 F 0 "J115" H 8250 4217 50  0000 C CNN
 F 1 "Conn_02x03_Top_Bottom" H 8250 4126 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-06A_2x03_P4.20mm_Vertical" H 8200 3900 50  0001 C CNN
+F 2 "ATXs:Molex_Mini-Fit_Jr_5566-06A_2x03_P4.20mm_Vertical" H 8200 3900 50  0001 C CNN
 F 3 "~" H 8200 3900 50  0001 C CNN
 	1    8200 3900
 	1    0    0    -1  
@@ -30,7 +30,7 @@ U 1 1 5B6B19E5
 P 8200 4500
 F 0 "J116" H 8250 4817 50  0000 C CNN
 F 1 "Conn_02x03_Top_Bottom" H 8250 4726 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-06A_2x03_P4.20mm_Vertical" H 8200 4500 50  0001 C CNN
+F 2 "ATXs:Molex_Mini-Fit_Jr_5566-06A_2x03_P4.20mm_Vertical" H 8200 4500 50  0001 C CNN
 F 3 "~" H 8200 4500 50  0001 C CNN
 	1    8200 4500
 	1    0    0    -1  
@@ -41,7 +41,7 @@ U 1 1 5B6B1A23
 P 8200 5100
 F 0 "J117" H 8250 5417 50  0000 C CNN
 F 1 "Conn_02x03_Top_Bottom" H 8250 5326 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-06A_2x03_P4.20mm_Vertical" H 8200 5100 50  0001 C CNN
+F 2 "ATXs:Molex_Mini-Fit_Jr_5566-06A_2x03_P4.20mm_Vertical" H 8200 5100 50  0001 C CNN
 F 3 "~" H 8200 5100 50  0001 C CNN
 	1    8200 5100
 	1    0    0    -1  
@@ -165,7 +165,7 @@ U 1 1 5BFE05F3
 P 8200 3300
 F 0 "J114" H 8250 3617 50  0000 C CNN
 F 1 "Conn_02x03_Top_Bottom" H 8250 3526 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-06A_2x03_P4.20mm_Vertical" H 8200 3300 50  0001 C CNN
+F 2 "ATXs:Molex_Mini-Fit_Jr_5566-06A_2x03_P4.20mm_Vertical" H 8200 3300 50  0001 C CNN
 F 3 "~" H 8200 3300 50  0001 C CNN
 	1    8200 3300
 	1    0    0    -1  
