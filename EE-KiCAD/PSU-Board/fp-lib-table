@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name ATXs)(type KiCad)(uri /home/evan/github/ATXserverPSU/EE-KiCAD/Local_Lib/ATXs.pretty)(options "")(descr ""))
+)

@@ -231,7 +231,7 @@ U 1 1 60397085
 P 8400 4800
 F 0 "J101" H 8450 3175 50  0000 C CNN
 F 1 "Conn_02x28_Odd_Even" H 8450 3266 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x28_P2.54mm_Horizontal" H 8400 4800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x28_P2.54mm_Vertical" H 8400 4800 50  0001 C CNN
 F 3 "~" H 8400 4800 50  0001 C CNN
 	1    8400 4800
 	-1   0    0    1   

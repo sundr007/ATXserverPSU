@@ -3,10 +3,13 @@ include </home/evan/github/lasercut/lasercut.scad>;
 
 
 module ATX_PCB(){
-import("/home/evan/github/ATXserverPSU/ME-OpenSCAD/PCBATX.stl");
+import("PCBATX.stl");
 }
 module PSU_PCB(){
-import("/home/evan/github/ATXserverPSU/ME-OpenSCAD/PCBPSU.stl");
+ import("PCBPSU.stl");
+}
+module PSU(){
+import("PSU.stl");
 }
 
 $fn=60;
@@ -19,19 +22,22 @@ render_pcbATX   = false;
 
 // Part Seperation
 Sep=10-10*$t;
-Sep=0.1;
+Sep=0;
 
 thickness = 3;
 
+Tape_thickness= 2;
+PCB_Thickness = 1.575;
 // ATX Front Plate
 W = 150;
 
 
-Hpsu=41.5;
-Lpsu=165;
-Wpsu=80;
+Hpsu=41;
+Lpsu=186;
+Wpsu=74.5;
 ATXgap=15;
-Backgap=20;
+PSU_to_psuPCB=18.5;
+Backgap=PSU_to_psuPCB- thickness*2+PCB_Thickness+Tape_thickness;
 
 H = Wpsu+thickness*1;
 
@@ -49,9 +55,10 @@ Yfrontpanelthick=10;
 Ybacksq = L-(L1+yindent)+6;
 Xseperator1 = Xindent+Hpsu+thickness;
 Xseperator2 = Xindent+(Hpsu+thickness)*2;
+Lseperator  = Lpsu - thickness*2+PSU_to_psuPCB;
 
 // ATX PCB
-PCB_Thickness = 1.575;
+
 Watx = Ybacksq -10;
 Hatx = H-6; 
 PCB_Thick=10;
@@ -66,13 +73,27 @@ module pcbATX3d(){
     translate([Xindent+Wback-thickness+3*Sep-thickness,L-(L-Lpsu)-Watx+PCB_Thick,thickness+1.5])
     rotate([90,0,0])
     rotate([0,90,0])
+    color("green",0.5)
     pcbATX();
 }
 
 module pcbPSU3d(){
-    translate([-Hatx-ATXgap+2,L-(L-Lpsu)-Watx+PCB_Thick+Watx,Hatx+56.5])
+    translate([Xseperator2+thickness-75.5+7.5,Lseperator+PCB_Thickness,thickness])
     rotate([90,0,0])
+    color("green",0.5)
     PSU_PCB();
+}
+
+module PSU3d(){
+       translate([Xindent+Hpsu+2,Lpsu/2-thickness*2,Wpsu/2+thickness])
+    rotate([0,0,90])
+    color("white",0.5)
+    PSU(); 
+
+       translate([Xindent+Hpsu*2+thickness+2,Lpsu/2-thickness*2,Wpsu/2+thickness])
+    rotate([0,0,90])
+    color("white",0.5)
+    PSU(); 
 }
 
 module pcbATX2d(){
@@ -96,9 +117,10 @@ module 3d() {
     Top3d();
     Bottom3d();
    // Back3d();
-    //Left3d();
-    pcbATX3d();
+    Left3d();
+    //pcbATX3d();
     pcbPSU3d();
+    PSU3d();
 }
 
 // ================================================
@@ -217,7 +239,11 @@ module topPlate()
                 [MID,Xseperator2, (Lpsu)*1/3-thickness/2],
                 [MID,Xseperator2, (Lpsu)*2/3-thickness/2],
                 [MID,Xseperator2, Lpsu-thickness*1.5],
-            ]
+            ],
+                    cutouts = [
+            [Xindent+Hpsu/2-7.5, 1, 17, 13],
+            [Xindent+Hpsu+thickness+Hpsu/2-7.5, 1, 17, 13]
+    ]
 
     );
     translate([Xindent,L1+yindent-thickness*2,0])
@@ -231,25 +257,7 @@ module topPlate()
             [Xindent, 4, 83,Lpsu-(L1+yindent-thickness*2)]
     ]
     );
-}
-//    translate([Wfront-thickness-0.6,0])
-//        rotate([0,0,45])
-//        cube([1,51.75,thickness+.1]);
-//
-//    translate([Xindent+Wback+thickness*1,L1])
-//        rotate([0,0,180])
-//        cube([1,18.2,thickness+.1]);
-
-}
-    
-    
-//        translate([0,0,0])
-//        lasercutoutSquare(thickness=thickness, x=Wfront, y=thickness/2,
-//            bumpy_finger_joints=[
-//                [DOWN, 1, 3]
-//            ]
-//    );
-}
+}}}
 
 module topTrim()
 {
@@ -304,6 +312,8 @@ module back()
 
 module Seperator(fingers)
 {
+    Xair = 10;
+    Yair = 10;
     H=H-thickness;
     tabs = [
             [DOWN, thickness*2, 0],
@@ -313,20 +323,29 @@ module Seperator(fingers)
             [UP, thickness*2, H],
             [UP, Lpsu*1/3, H],
             [UP, Lpsu*2/3, H],
-            [UP, Lpsu-thickness, H]
+            [UP, Lpsu-thickness, H],
+            [LEFT, Lseperator+thickness, thickness/2+10.5],
+            [LEFT, Lseperator+thickness, -thickness/2+H-9.5]
         ];
+    cuts = [
+            [Lseperator-Xair-Xair/2, Yair, Xair, Yair],
+            [Lseperator-Xair-Xair/2, Yair*3, Xair, Xair],
+            [Lseperator-Xair-Xair/2, Yair*5, Xair, Xair]];
+    
     if(fingers){
-    lasercutoutSquare(thickness=thickness, x=Lpsu, y=H,
+    lasercutoutSquare(thickness=thickness, x=Lseperator, y=H,
     simple_tabs=tabs,
         bumpy_finger_joints=[
                 [LEFT, 0, 4]
-        ]
+        ],
+    cutouts = cuts
     ); 
     }
     else
     {
-    lasercutoutSquare(thickness=thickness, x=Lpsu, y=H,
-    simple_tabs=tabs
+    lasercutoutSquare(thickness=thickness, x=Lseperator, y=H,
+    simple_tabs=tabs,
+        cutouts = cuts
     );   
     }
 
