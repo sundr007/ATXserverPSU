@@ -1,4 +1,4 @@
-(module ATXs-PSU-MountHoles (layer F.Cu) (tedit 6041BD75)
+(module ATXs-PSU-MountHoles (layer F.Cu) (tedit 605AB8AD)
   (fp_text reference REF** (at 0 0.5) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -9,4 +9,6 @@
   (pad "" np_thru_hole circle (at -22 25.75) (size 4.25 4.25) (drill 4.25) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at 22 25.75) (size 4.25 4.25) (drill 4.25) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at 22 -25.75) (size 4.25 4.25) (drill 4.25) (layers *.Cu *.Mask))
+  (pad "" np_thru_hole circle (at -22 0) (size 3.4 3.4) (drill 3.2) (layers *.Cu *.Mask))
+  (pad "" np_thru_hole circle (at 22 0) (size 3.4 3.4) (drill 3.2) (layers *.Cu *.Mask))
 )
